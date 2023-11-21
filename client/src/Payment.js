@@ -8,6 +8,27 @@ function Payment() {
   const [stripePromise, setStripePromise] = useState(null);
   const [clientSecret, setClientSecret] = useState("");
 
+  const items = [
+    {
+      id: 1,
+      name: "T-shirt",
+      description: "Comfortable cotton t-shirt",
+      price: 2000,
+    },
+    {
+      id: 2,
+      name: "Mug",
+      description: "Coffee mug",
+      price: 520,
+    },
+    {
+      id: 3,
+      name: "Book",
+      description: "Book with blank pages",
+      price: 15,
+    },
+  ];
+
   useEffect(() => {
     fetch("/config").then(async (r) => {
       const { publishableKey } = await r.json();
@@ -15,15 +36,26 @@ function Payment() {
     });
   }, []);
 
+
   useEffect(() => {
     fetch("/create-payment-intent", {
       method: "POST",
-      body: JSON.stringify({}),
-    }).then(async (result) => {
-      var { clientSecret } = await result.json();
-      setClientSecret(clientSecret);
-    });
-  }, []);
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ items }),
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setClientSecret(data.clientSecret);
+        console.log(data.clientSecret);
+      });
+  }
+  , []);
+
+
 
   return (
     <>
