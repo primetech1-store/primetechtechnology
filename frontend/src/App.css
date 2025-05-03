@@ -44,18 +44,30 @@
 .item-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 10px;
 }
 
 .item-card {
-  width: 300px;
-  margin: 1em;
-  padding: 0;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: var(--color-background-soft);
+  width: 150px;
 }
 
 .item-card p,
 h3 {
   margin: 0;
+}
+
+.product-details {
+  padding: 0 10px;
+}
+
+.product-title {
+  font-size: 15px;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
 }

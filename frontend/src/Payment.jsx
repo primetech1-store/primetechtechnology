@@ -8,16 +8,8 @@ function Payment() {
   const [clientSecret, setClientSecret] = useState("");
   const [paymentStarted, setPaymentStarted] = useState(false);
 
-  const items = [
-    {
-      id: 1,
-      name: "T-shirt",
-      description: "Comfortable cotton t-shirt",
-      price: 1000,
-    },
-    { id: 2, name: "Mug", description: "Coffee mug", price: 520 },
-    { id: 3, name: "Book", description: "Book with blank pages", price: 15 },
-  ];
+  //fetch from local storage instead of hardcoded items
+  const items = JSON.parse(localStorage.getItem("cart")) || [];
 
   useEffect(() => {
     fetch("https://react-stripe-payment-two.vercel.app/config").then(
@@ -41,6 +33,12 @@ function Payment() {
       });
   };
 
+  const handleRemove = (item) => {
+    const updatedItems = items.filter((i) => i.id !== item.id);
+    localStorage.setItem("cart", JSON.stringify(updatedItems));
+    alert(`${item.name} removed from cart`);
+    window.location.reload(); // Refresh the page to reflect changes
+  };
   return (
     <>
       <h2>Cart</h2>
@@ -54,6 +52,7 @@ function Payment() {
             <h3>{item.name}</h3>
             <p>{item.description}</p>
             <p>Price: KES {item.price}</p>
+            <button onClick={() => handleRemove(item)}>Remove from Cart</button>
           </div>
         ))}
       </section>

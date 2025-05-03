@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "title": "Maize Flour 2kg",
+    "description": "Premium maize flour for ugali.",
+    "category": "Groceries",
+    "price": 150,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 2,
+    "title": "Cooking Oil 5L",
+    "description": "Pure vegetable cooking oil.",
+    "category": "Groceries",
+    "price": 1200,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 3,
+    "title": "Sugar 2kg",
+    "description": "Refined sugar for your tea and baking.",
+    "category": "Groceries",
+    "price": 250,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 4,
+    "title": "Tea Leaves 500g",
+    "description": "High-quality Kenyan tea leaves.",
+    "category": "Groceries",
+    "price": 350,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 5,
+    "title": "Rice 5kg",
+    "description": "Long-grain basmati rice.",
+    "category": "Groceries",
+    "price": 700,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 6,
+    "title": "Milk 1L",
+    "description": "Fresh pasteurized milk.",
+    "category": "Dairy",
+    "price": 60,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 7,
+    "title": "Cheese 250g",
+    "description": "Creamy cheddar cheese.",
+    "category": "Dairy",
+    "price": 450,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 8,
+    "title": "Butter 500g",
+    "description": "Rich and creamy butter.",
+    "category": "Dairy",
+    "price": 550,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 9,
+    "title": "Yoghurt 1L",
+    "description": "Natural flavored yoghurt.",
+    "category": "Dairy",
+    "price": 300,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 10,
+    "title": "Eggs Tray",
+    "description": "30 fresh farm eggs.",
+    "category": "Dairy",
+    "price": 450,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 11,
+    "title": "Sukuma Wiki 1kg",
+    "description": "Fresh kale leaves.",
+    "category": "Vegetables",
+    "price": 80,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 12,
+    "title": "Tomatoes 1kg",
+    "description": "Fresh red tomatoes.",
+    "category": "Vegetables",
+    "price": 120,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 13,
+    "title": "Onions 1kg",
+    "description": "Fresh red onions.",
+    "category": "Vegetables",
+    "price": 100,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 14,
+    "title": "Potatoes 5kg",
+    "description": "Fresh Irish potatoes.",
+    "category": "Vegetables",
+    "price": 400,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 15,
+    "title": "Carrots 1kg",
+    "description": "Fresh orange carrots.",
+    "category": "Vegetables",
+    "price": 90,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 16,
+    "title": "Beef 1kg",
+    "description": "Fresh beef cuts.",
+    "category": "Meat",
+    "price": 600,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 17,
+    "title": "Chicken 1kg",
+    "description": "Fresh whole chicken.",
+    "category": "Meat",
+    "price": 800,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 18,
+    "title": "Fish 1kg",
+    "description": "Fresh tilapia fish.",
+    "category": "Meat",
+    "price": 700,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 19,
+    "title": "Sausages 1kg",
+    "description": "Beef sausages.",
+    "category": "Meat",
+    "price": 500,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 20,
+    "title": "Bacon 500g",
+    "description": "Smoked bacon strips.",
+    "category": "Meat",
+    "price": 450,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 21,
+    "title": "Bread 400g",
+    "description": "Freshly baked bread.",
+    "category": "Bakery",
+    "price": 60,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 22,
+    "title": "Mandazi Pack",
+    "description": "Pack of 10 mandazis.",
+    "category": "Bakery",
+    "price": 100,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 23,
+    "title": "Cake Slice",
+    "description": "Vanilla flavored cake slice.",
+    "category": "Bakery",
+    "price": 150,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 24,
+    "title": "Chapati Pack",
+    "description": "Pack of 5 chapatis.",
+    "category": "Bakery",
+    "price": 200,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 25,
+    "title": "Donuts Pack",
+    "description": "Pack of 6 donuts.",
+    "category": "Bakery",
+    "price": 250,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 26,
+    "title": "Toothpaste 100ml",
+    "description": "Fluoride toothpaste.",
+    "category": "Personal Care",
+    "price": 150,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 27,
+    "title": "Shampoo 500ml",
+    "description": "Moisturizing shampoo.",
+    "category": "Personal Care",
+    "price": 400,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 28,
+    "title": "Soap Bar",
+    "description": "Antibacterial soap bar.",
+    "category": "Personal Care",
+    "price": 80,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 29,
+    "title": "Body Lotion 250ml",
+    "description": "Hydrating body lotion.",
+    "category": "Personal Care",
+    "price": 350,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 30,
+    "title": "Deodorant Spray",
+    "description": "Long-lasting deodorant.",
+    "category": "Personal Care",
+    "price": 500,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 31,
+    "title": "Detergent Powder 1kg",
+    "description": "High-efficiency detergent.",
+    "category": "Household",
+    "price": 300,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 32,
+    "title": "Dishwashing Liquid 500ml",
+    "description": "Lemon-scented dishwashing liquid.",
+    "category": "Household",
+    "price": 200,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 33,
+    "title": "Toilet Paper Pack",
+    "description": "Pack of 10 rolls.",
+    "category": "Household",
+    "price": 400,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 34,
+    "title": "Mop",
+    "description": "Durable cleaning mop.",
+    "category": "Household",
+    "price": 600,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 35,
+    "title": "Broom",
+    "description": "Strong bristle broom.",
+    "category": "Household",
+    "price": 300,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 36,
+    "title": "Notebook",
+    "description": "200-page ruled notebook.",
+    "category": "Stationery",
+    "price": 150,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 37,
+    "title": "Pen Pack",
+    "description": "Pack of 5 blue pens.",
+    "category": "Stationery",
+    "price": 100,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 38,
+    "title": "Pencil Pack",
+    "description": "Pack of 10 pencils.",
+    "category": "Stationery",
+    "price": 120,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 39,
+    "title": "Eraser",
+    "description": "Soft eraser for clean erasing.",
+    "category": "Stationery",
+    "price": 50,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 40,
+    "title": "Sharpener",
+    "description": "Durable pencil sharpener.",
+    "category": "Stationery",
+    "price": 60,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 41,
+    "title": "Laptop",
+    "description": "15-inch laptop with 8GB RAM.",
+    "category": "Electronics",
+    "price": 60000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 42,
+    "title": "Smartphone",
+    "description": "64GB storage, dual SIM.",
+    "category": "Electronics",
+    "price": 20000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 43,
+    "title": "Headphones",
+    "description": "Noise-cancelling headphones.",
+    "category": "Electronics",
+    "price": 5000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 44,
+    "title": "Smartwatch",
+    "description": "Fitness tracking smartwatch.",
+    "category": "Electronics",
+    "price": 10000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 45,
+    "title": "Power Bank",
+    "description": "10,000mAh portable charger.",
+    "category": "Electronics",
+    "price": 3000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 46,
+    "title": "Football",
+    "description": "Standard size football.",
+    "category": "Sports",
+    "price": 1500,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 47,
+    "title": "Tennis Racket",
+    "description": "Lightweight tennis racket.",
+    "category": "Sports",
+    "price": 7000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 48,
+    "title": "Basketball",
+    "description": "Durable basketball.",
+    "category": "Sports",
+    "price": 2000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 49,
+    "title": "Yoga Mat",
+    "description": "Non-slip yoga mat.",
+    "category": "Sports",
+    "price": 2500,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  },
+  {
+    "id": 50,
+    "title": "Dumbbells 5kg",
+    "description": "Pair of 5kg dumbbells.",
+    "category": "Sports",
+    "price": 4000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+  }
+]
