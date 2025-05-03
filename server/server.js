@@ -1,7 +1,9 @@
 const express = require("express");
-const bodyParser = require('body-parser');
+const bodyParser = require("body-parser");
+const cors = require("cors");
 
 const app = express();
+app.use(cors());
 app.use(bodyParser.json());
 const { resolve } = require("path");
 // Replace if using a different env file or config
@@ -25,7 +27,7 @@ app.get("/config", (req, res) => {
 });
 
 app.post("/create-payment-intent", async (req, res) => {
-  const total = req.body.items.reduce( (acc, product) => acc + product.price, 0);
+  const total = req.body.items.reduce((acc, product) => acc + product.price, 0);
   const amount = Math.round(total * 100);
   try {
     const paymentIntent = await stripe.paymentIntents.create({
