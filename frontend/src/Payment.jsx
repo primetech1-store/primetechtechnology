@@ -20,15 +20,17 @@ function Payment() {
   ];
 
   useEffect(() => {
-    fetch("http://localhost:5252/config").then(async (r) => {
-      const { publishableKey } = await r.json();
-      setStripePromise(loadStripe(publishableKey));
-    });
+    fetch("https://react-stripe-payment-two.vercel.app/config").then(
+      async (r) => {
+        const { publishableKey } = await r.json();
+        setStripePromise(loadStripe(publishableKey));
+      }
+    );
   }, []);
 
   const startPayment = () => {
     setPaymentStarted(true);
-    fetch("http://localhost:5252/create-payment-intent", {
+    fetch("https://react-stripe-payment-two.vercel.app/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ items }),
@@ -41,14 +43,20 @@ function Payment() {
 
   return (
     <>
-      <h1>React Stripe and the Payment Element</h1>
-      {items.map((item) => (
-        <div key={item.id}>
-          <h2>{item.name}</h2>
-          <p>{item.description}</p>
-          <p>Price: KES {item.price}</p>
-        </div>
-      ))}
+      <h2>Cart</h2>
+      <section className="item-container">
+        {items.map((item) => (
+          <div key={item.id} className="item-card">
+            <img
+              src={`https://picsum.photos/200/200?random=${item.id}`}
+              alt={item.name}
+            />
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+            <p>Price: KES {item.price}</p>
+          </div>
+        ))}
+      </section>
       {!paymentStarted && <button onClick={startPayment}>Start Payment</button>}
       {clientSecret && stripePromise && (
         <Elements stripe={stripePromise} options={{ clientSecret }}>
