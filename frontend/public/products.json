@@ -1,402 +1,242 @@
 [
   {
     "id": 1,
-    "title": "Maize Flour 2kg",
-    "description": "Premium maize flour for ugali.",
-    "category": "Groceries",
-    "price": 150,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "iPhone 15 Pro (256GB)",
+    "description": "6.1\" Super Retina XDR, A17 Pro chip, Titanium design",
+    "category": "Smartphones",
+    "price": 1099.0,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/IPhone_15_Pro_Max_and_the_box%2C_2023%2C_02.jpg"
   },
   {
     "id": 2,
-    "title": "Cooking Oil 5L",
-    "description": "Pure vegetable cooking oil.",
-    "category": "Groceries",
-    "price": 1200,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Samsung Galaxy S24 Ultra",
+    "description": "6.8\" Dynamic AMOLED, Snapdragon 8 Gen 3, S Pen included",
+    "category": "Smartphones",
+    "price": 1299.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Samsung_Galaxy_S24_Ultra_with_retail_box%2C_front.jpg"
   },
   {
     "id": 3,
-    "title": "Sugar 2kg",
-    "description": "Refined sugar for your tea and baking.",
-    "category": "Groceries",
-    "price": 250,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "MacBook Pro 14\" (M3 Pro)",
+    "description": "14.2\" Liquid Retina XDR, 16GB RAM, 512GB SSD",
+    "category": "Laptops",
+    "price": 1999.0,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Review_zu_Apple_Hardware_mit_Apple_M4-CPUs_%28Geekerwan%29_14.png"
   },
   {
     "id": 4,
-    "title": "Tea Leaves 500g",
-    "description": "High-quality Kenyan tea leaves.",
-    "category": "Groceries",
-    "price": 350,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Dell XPS 15 (2024)",
+    "description": "15.6\" 4K OLED, Intel Core i9, 32GB RAM",
+    "category": "Laptops",
+    "price": 2299.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Dell_XPS_15_%282017%29.png"
   },
   {
     "id": 5,
-    "title": "Rice 5kg",
-    "description": "Long-grain basmati rice.",
-    "category": "Groceries",
-    "price": 700,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "LG C3 65\" OLED TV",
+    "description": "4K HDR, α9 Gen6 AI Processor, 120Hz refresh rate",
+    "category": "Televisions",
+    "price": 1596.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/LG_TVs_%282023-06-22%29.jpg"
   },
   {
     "id": 6,
-    "title": "Milk 1L",
-    "description": "Fresh pasteurized milk.",
-    "category": "Dairy",
-    "price": 60,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Sony WH-1000XM5 Headphones",
+    "description": "Industry-leading ANC, 30-hour battery life",
+    "category": "Audio",
+    "price": 349.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Sony_Headphones_%2840476165073%29.jpg"
   },
   {
     "id": 7,
-    "title": "Cheese 250g",
-    "description": "Creamy cheddar cheese.",
-    "category": "Dairy",
-    "price": 450,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Dyson V15 Detect Vacuum",
+    "description": "Laser dust detection, HEPA filtration, 60 mins runtime",
+    "category": "Home Appliances",
+    "price": 699.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Dyson_vacuum_cleaners.jpg"
   },
   {
     "id": 8,
-    "title": "Butter 500g",
-    "description": "Rich and creamy butter.",
-    "category": "Dairy",
-    "price": 550,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Ninja Foodi 10-in-1 Air Fryer",
+    "description": "6.5qt capacity, Air Fry, Roast, Bake, Dehydrate",
+    "category": "Home Appliances",
+    "price": 199.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Ninja_Foodi_MAX_Health_Grill_%26_Air_Fryer_AG551EU_%28cropped%29.jpg"
   },
   {
     "id": 9,
-    "title": "Yoghurt 1L",
-    "description": "Natural flavored yoghurt.",
-    "category": "Dairy",
-    "price": 300,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Google Pixel 8 Pro",
+    "description": "6.7\" LTPO OLED, Tensor G3, 50MP camera",
+    "category": "Smartphones",
+    "price": 999.0,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Google_Pixel_8_Pro%2C_shown_in_Shibuya_Stream.jpg"
   },
   {
     "id": 10,
-    "title": "Eggs Tray",
-    "description": "30 fresh farm eggs.",
-    "category": "Dairy",
-    "price": 450,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "ASUS ROG Zephyrus G14",
+    "description": "14\" QHD 165Hz, AMD Ryzen 9, RTX 4060",
+    "category": "Laptops",
+    "price": 1499.99,
+    "image": "https://commons.wikimedia.org/wiki/File:ASUS_ROG_Zephyrus_G14_GA401_*360_degrees*.webm"
   },
   {
     "id": 11,
-    "title": "Sukuma Wiki 1kg",
-    "description": "Fresh kale leaves.",
-    "category": "Vegetables",
-    "price": 80,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Samsung QN90C Neo QLED TV",
+    "description": "4K Quantum HDR, Mini-LED, 144Hz gaming",
+    "category": "Televisions",
+    "price": 2199.99,
+    "image": "https://commons.wikimedia.org/wiki/File:Samsung_QLED_8K_1-1.webm"
   },
   {
     "id": 12,
-    "title": "Tomatoes 1kg",
-    "description": "Fresh red tomatoes.",
-    "category": "Vegetables",
-    "price": 120,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Apple AirPods Pro (2nd Gen)",
+    "description": "Active Noise Cancellation, MagSafe charging",
+    "category": "Audio",
+    "price": 249.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Apple_airpods_pro_case.jpg"
   },
   {
     "id": 13,
-    "title": "Onions 1kg",
-    "description": "Fresh red onions.",
-    "category": "Vegetables",
-    "price": 100,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Breville Smart Microwave Oven",
+    "description": "1800W convection oven with 13 cooking functions",
+    "category": "Home Appliances",
+    "price": 399.95,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Breville_Microwave.png"
   },
   {
     "id": 14,
-    "title": "Potatoes 5kg",
-    "description": "Fresh Irish potatoes.",
-    "category": "Vegetables",
-    "price": 400,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "OnePlus 11 5G",
+    "description": "6.7\" 120Hz AMOLED, Snapdragon 8 Gen 2",
+    "category": "Smartphones",
+    "price": 699.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Oneplus_6T.jpg"
   },
   {
     "id": 15,
-    "title": "Carrots 1kg",
-    "description": "Fresh orange carrots.",
-    "category": "Vegetables",
-    "price": 90,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "HP Spectre x360 14",
+    "description": "14\" 3K2K OLED, Intel Core i7, 16GB RAM",
+    "category": "Laptops",
+    "price": 1649.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Hp_Spectre_x360_13t.jpg"
   },
   {
     "id": 16,
-    "title": "Beef 1kg",
-    "description": "Fresh beef cuts.",
-    "category": "Meat",
-    "price": 600,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "TCL 55\" QLED TV",
+    "description": "4K QLED, Dolby Vision, Google TV",
+    "category": "Televisions",
+    "price": 599.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/TCL_TVs_%282023-06-22%29.jpg"
   },
   {
     "id": 17,
-    "title": "Chicken 1kg",
-    "description": "Fresh whole chicken.",
-    "category": "Meat",
-    "price": 800,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Apple Watch Series 9",
+    "description": "45mm Aluminum, S9 SiP, 2000 nits brightness",
+    "category": "Wearables",
+    "price": 429.0,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/Apple_Watch_Series_9_1_2023-11-14.jpg"
   },
   {
     "id": 18,
-    "title": "Fish 1kg",
-    "description": "Fresh tilapia fish.",
-    "category": "Meat",
-    "price": 700,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Bose QuietComfort Ultra",
+    "description": "Immersive Audio with spatial sound",
+    "category": "Audio",
+    "price": 429.0,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg"
   },
   {
     "id": 19,
-    "title": "Sausages 1kg",
-    "description": "Beef sausages.",
-    "category": "Meat",
-    "price": 500,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Shark Vertex Vacuum",
+    "description": "DuoClean PowerFins, 60 mins runtime",
+    "category": "Home Appliances",
+    "price": 349.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Vacuum_cleaner.jpg"
   },
   {
     "id": 20,
-    "title": "Bacon 500g",
-    "description": "Smoked bacon strips.",
-    "category": "Meat",
-    "price": 450,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Samsung Galaxy Tab S9 Ultra",
+    "description": "14.6\" Dynamic AMOLED, S Pen included",
+    "category": "Tablets",
+    "price": 1199.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SAMSUNG_Galaxy_Tab_S9%2C_SAMSUNG_W24%2C_%28FROM_SAMSUNG_Galaxy_Z_Fold_5%29%2C_SAMSUNG_W24_FLIP_%28FROM_SAMSUNG_Galaxy_Z_Flip_5%29_%26_SAMSUNG_Galaxy_Watch_6_Classic.jpg"
   },
   {
     "id": 21,
-    "title": "Bread 400g",
-    "description": "Freshly baked bread.",
-    "category": "Bakery",
-    "price": 60,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Lenovo Legion Pro 7i",
+    "description": "16\" WQXGA 240Hz, i9-13900HX, RTX 4080",
+    "category": "Laptops",
+    "price": 2499.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Lenovo_legion_%28laptop%29_%26_Lenovo_400_Wireless_%28Mouse%29_IMG_6309ab.jpg"
   },
   {
     "id": 22,
-    "title": "Mandazi Pack",
-    "description": "Pack of 10 mandazis.",
-    "category": "Bakery",
-    "price": 100,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Sony A80L OLED TV",
+    "description": "4K HDR with Cognitive Processor XR",
+    "category": "Televisions",
+    "price": 1998.0,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/TCL_4K_tv_%2823851323683%29.jpg"
   },
   {
     "id": 23,
-    "title": "Cake Slice",
-    "description": "Vanilla flavored cake slice.",
-    "category": "Bakery",
-    "price": 150,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "iPad Pro 12.9\" (M2)",
+    "description": "Liquid Retina XDR display, Thunderbolt port",
+    "category": "Tablets",
+    "price": 1099.0,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/IPad_Pro_12.9_3rd_gen_mockup.png"
   },
   {
     "id": 24,
-    "title": "Chapati Pack",
-    "description": "Pack of 5 chapatis.",
-    "category": "Bakery",
-    "price": 200,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Beats Studio Pro",
+    "description": "Active Noise Cancelling, 40-hour battery",
+    "category": "Audio",
+    "price": 349.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Beats_Studio_Buds_Plus_-_1.jpg"
   },
   {
     "id": 25,
-    "title": "Donuts Pack",
-    "description": "Pack of 6 donuts.",
-    "category": "Bakery",
-    "price": 250,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "iRobot Roomba j7+",
+    "description": "Self-emptying robot vacuum with AI",
+    "category": "Home Appliances",
+    "price": 799.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/IRobot_Roomba_870_%2813058836075%29.jpg"
   },
   {
     "id": 26,
-    "title": "Toothpaste 100ml",
-    "description": "Fluoride toothpaste.",
-    "category": "Personal Care",
-    "price": 150,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Microsoft Surface Laptop 5",
+    "description": "15\" Touchscreen, i7-1255U, 16GB RAM",
+    "category": "Laptops",
+    "price": 1499.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Microsoft_Surface_Laptop_7.jpg"
   },
   {
     "id": 27,
-    "title": "Shampoo 500ml",
-    "description": "Moisturizing shampoo.",
-    "category": "Personal Care",
-    "price": 400,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Hisense U8K Mini-LED TV",
+    "description": "4K ULED X, 144Hz gaming, Google TV",
+    "category": "Televisions",
+    "price": 1499.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/HISENSE_TV_chez_Boulanger_Sarcelles.jpg"
   },
   {
     "id": 28,
-    "title": "Soap Bar",
-    "description": "Antibacterial soap bar.",
-    "category": "Personal Care",
-    "price": 80,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Samsung Galaxy Z Flip 5",
+    "description": "6.7\" Foldable AMOLED, Snapdragon 8 Gen 2",
+    "category": "Smartphones",
+    "price": 999.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Samsung_Galaxy_Z_Flip.jpg"
   },
   {
     "id": 29,
-    "title": "Body Lotion 250ml",
-    "description": "Hydrating body lotion.",
-    "category": "Personal Care",
-    "price": 350,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "LG UltraGear OLED Monitor",
+    "description": "27\" 240Hz, 0.03ms response, G-SYNC",
+    "category": "Monitors",
+    "price": 899.99,
+    "image": "https://commons.wikimedia.org/wiki/Category:LG_monitors#/media/File:LG_UltraFine_5K_Display.jpg"
   },
   {
     "id": 30,
-    "title": "Deodorant Spray",
-    "description": "Long-lasting deodorant.",
-    "category": "Personal Care",
-    "price": 500,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 31,
-    "title": "Detergent Powder 1kg",
-    "description": "High-efficiency detergent.",
-    "category": "Household",
-    "price": 300,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 32,
-    "title": "Dishwashing Liquid 500ml",
-    "description": "Lemon-scented dishwashing liquid.",
-    "category": "Household",
-    "price": 200,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 33,
-    "title": "Toilet Paper Pack",
-    "description": "Pack of 10 rolls.",
-    "category": "Household",
-    "price": 400,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 34,
-    "title": "Mop",
-    "description": "Durable cleaning mop.",
-    "category": "Household",
-    "price": 600,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 35,
-    "title": "Broom",
-    "description": "Strong bristle broom.",
-    "category": "Household",
-    "price": 300,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 36,
-    "title": "Notebook",
-    "description": "200-page ruled notebook.",
-    "category": "Stationery",
-    "price": 150,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 37,
-    "title": "Pen Pack",
-    "description": "Pack of 5 blue pens.",
-    "category": "Stationery",
-    "price": 100,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 38,
-    "title": "Pencil Pack",
-    "description": "Pack of 10 pencils.",
-    "category": "Stationery",
-    "price": 120,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 39,
-    "title": "Eraser",
-    "description": "Soft eraser for clean erasing.",
-    "category": "Stationery",
-    "price": 50,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 40,
-    "title": "Sharpener",
-    "description": "Durable pencil sharpener.",
-    "category": "Stationery",
-    "price": 60,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 41,
-    "title": "Laptop",
-    "description": "15-inch laptop with 8GB RAM.",
-    "category": "Electronics",
-    "price": 60000,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 42,
-    "title": "Smartphone",
-    "description": "64GB storage, dual SIM.",
-    "category": "Electronics",
-    "price": 20000,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 43,
-    "title": "Headphones",
-    "description": "Noise-cancelling headphones.",
-    "category": "Electronics",
-    "price": 5000,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 44,
-    "title": "Smartwatch",
-    "description": "Fitness tracking smartwatch.",
-    "category": "Electronics",
-    "price": 10000,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 45,
-    "title": "Power Bank",
-    "description": "10,000mAh portable charger.",
-    "category": "Electronics",
-    "price": 3000,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 46,
-    "title": "Football",
-    "description": "Standard size football.",
-    "category": "Sports",
-    "price": 1500,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 47,
-    "title": "Tennis Racket",
-    "description": "Lightweight tennis racket.",
-    "category": "Sports",
-    "price": 7000,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 48,
-    "title": "Basketball",
-    "description": "Durable basketball.",
-    "category": "Sports",
-    "price": 2000,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 49,
-    "title": "Yoga Mat",
-    "description": "Non-slip yoga mat.",
-    "category": "Sports",
-    "price": 2500,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-  },
-  {
-    "id": 50,
-    "title": "Dumbbells 5kg",
-    "description": "Pair of 5kg dumbbells.",
-    "category": "Sports",
-    "price": 4000,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+    "title": "Anker 737 Power Bank",
+    "description": "24,000mAh, 140W USB-C charging",
+    "category": "Accessories",
+    "price": 149.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Anker_power_bank_lit.jpg"
   }
 ]

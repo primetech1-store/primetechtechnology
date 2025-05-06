@@ -24,11 +24,7 @@ const Items = () => {
       <section className="item-container">
         {items.map((item) => (
           <div key={item.id} className="item-card">
-            <img
-              src={`https://picsum.photos/200/200?random=${item.id}`}
-              className="product-image"
-              alt={item.name}
-            />
+            <img src={item.image} className="product-image" alt={item.name} />
             <div className="product-details">
               <h3 className="product-title">{item.name}</h3>
               <p>{item.description}</p>
