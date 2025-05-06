@@ -105,3 +105,5 @@ client/
 .tern-port
 
 snippets/
+package-lock.json
+package.json

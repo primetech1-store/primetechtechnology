@@ -29,7 +29,7 @@ app.post("/create-payment-intent", async (req, res) => {
   const amount = Math.round(total * 100);
   try {
     const paymentIntent = await stripe.paymentIntents.create({
-      currency: "KES",
+      currency: "USD",
       amount: amount,
       automatic_payment_methods: { enabled: true },
     });

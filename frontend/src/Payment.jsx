@@ -56,7 +56,7 @@ function Payment() {
             />
             <h3>{item.name}</h3>
             <p>{item.description}</p>
-            <p>Price: KES {item.price}</p>
+            <p>Price: USD {item.price}</p>
             <button
               className="remove-button"
               onClick={() => handleRemove(item)}
