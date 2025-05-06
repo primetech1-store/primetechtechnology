@@ -15,9 +15,9 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY, {
 
 app.use(express.static(process.env.STATIC_DIR));
 
+//welcome message in '/' route
 app.get("/", (req, res) => {
-  const path = resolve(process.env.STATIC_DIR + "/index.html");
-  res.sendFile(path);
+  res.send("Welcome to the Stripe Payment API!");
 });
 
 app.get("/config", (req, res) => {
