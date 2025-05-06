@@ -57,7 +57,12 @@ function Payment() {
             <h3>{item.name}</h3>
             <p>{item.description}</p>
             <p>Price: KES {item.price}</p>
-            <button onClick={() => handleRemove(item)}>Remove from Cart</button>
+            <button
+              className="remove-button"
+              onClick={() => handleRemove(item)}
+            >
+              Remove from Cart
+            </button>
           </div>
         ))}
       </section>
