@@ -77,7 +77,7 @@
     "description": "14\" QHD 165Hz, AMD Ryzen 9, RTX 4060",
     "category": "Laptops",
     "price": 1499.99,
-    "image": "https://commons.wikimedia.org/wiki/File:ASUS_ROG_Zephyrus_G14_GA401_*360_degrees*.webm"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Lenovo_ThinkPad_X1_Carbon_Ultrabook.jpg"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "description": "4K Quantum HDR, Mini-LED, 144Hz gaming",
     "category": "Televisions",
     "price": 2199.99,
-    "image": "https://commons.wikimedia.org/wiki/File:Samsung_QLED_8K_1-1.webm"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Samsung_TV.jpg"
   },
   {
     "id": 12,

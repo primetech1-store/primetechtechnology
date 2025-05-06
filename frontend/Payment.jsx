@@ -30,14 +30,14 @@ function Payment() {
   ];
 
   useEffect(() => {
-    fetch("http://localhost:5252/config").then(async (r) => {
+    fetch("https://stripe-eta-eight.vercel.app/config").then(async (r) => {
       const { publishableKey } = await r.json();
       setStripePromise(loadStripe(publishableKey));
     });
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:5252/create-payment-intent", {
+    fetch("https://stripe-eta-eight.vercel.app/create-payment-intent", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
