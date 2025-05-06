@@ -11,7 +11,7 @@ const Items = () => {
     const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
     const updatedCartItems = [...cartItems, cartItem];
     localStorage.setItem("cart", JSON.stringify(updatedCartItems));
-    alert(`${item.name} added to cart`);
+    alert(`${item.title} added to cart`);
   };
 
   //check cart count
@@ -20,10 +20,7 @@ const Items = () => {
   const cartText = cartCount > 0 ? `(${cartCount})` : "";
 
   return (
-    <div>
-      <Link to="/payment" className="payment-link">
-        Cart {cartText}
-      </Link>
+    <div className="items-wrapper">
       <section className="item-container">
         {items.map((item) => (
           <div key={item.id} className="item-card">
