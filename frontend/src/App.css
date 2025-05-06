@@ -41,19 +41,19 @@
   color: #888;
 }
 .items-wrapper {
-  max-width: 920px;
+  max-width: 1200px;
 }
 .item-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 10px;
+  gap: 5px;
 }
 
 .item-card {
   border-bottom: 1px solid #ccc;
   background-color: var(--color-background-soft);
-  width: 150px;
+  width: 250px;
 }
 
 .item-card p,
@@ -71,7 +71,8 @@ h3 {
 
 .product-image {
   max-width: 100%;
-  height: auto;
+  height: 50%;
+  object-fit: cover;
 }
 
 .remove-button {
