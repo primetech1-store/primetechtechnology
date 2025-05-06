@@ -13,8 +13,6 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY, {
   apiVersion: "2022-08-01",
 });
 
-app.use(express.static(process.env.STATIC_DIR));
-
 //welcome message in '/' route
 app.get("/", (req, res) => {
   res.send("Welcome to the Stripe Payment API!");
