@@ -43,6 +43,11 @@ function Payment() {
     <>
       <h2>Cart</h2>
       <section className="item-container">
+        {items.length === 0 && (
+          <div className="empty-cart">
+            <h3>Your cart is empty</h3>
+          </div>
+        )}
         {items.map((item) => (
           <div key={item.id} className="item-card">
             <img
@@ -56,7 +61,9 @@ function Payment() {
           </div>
         ))}
       </section>
-      {!paymentStarted && <button onClick={startPayment}>Start Payment</button>}
+      {!paymentStarted && items.length > 0 && (
+        <button onClick={startPayment}>Start Payment</button>
+      )}
       {clientSecret && stripePromise && (
         <Elements stripe={stripePromise} options={{ clientSecret }}>
           <CheckoutForm />
