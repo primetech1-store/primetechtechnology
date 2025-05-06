@@ -12,7 +12,7 @@ function Payment() {
   const items = JSON.parse(localStorage.getItem("cart")) || [];
 
   useEffect(() => {
-    fetch("https://react-stripe-payment-two.vercel.app/config").then(
+    fetch("https://stripe-eta-eight.vercel.app/config").then(
       async (r) => {
         const { publishableKey } = await r.json();
         setStripePromise(loadStripe(publishableKey));
@@ -22,7 +22,7 @@ function Payment() {
 
   const startPayment = () => {
     setPaymentStarted(true);
-    fetch("https://react-stripe-payment-two.vercel.app/create-payment-intent", {
+    fetch("https://stripe-eta-eight.vercel.app/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ items }),
@@ -50,10 +50,7 @@ function Payment() {
         )}
         {items.map((item) => (
           <div key={item.id} className="item-card">
-            <img
-              src={`https://picsum.photos/200/200?random=${item.id}`}
-              alt={item.name}
-            />
+            <img src={item.image} className="product-image" alt={item.name} />
             <h3>{item.name}</h3>
             <p>{item.description}</p>
             <p>Price: USD {item.price}</p>
