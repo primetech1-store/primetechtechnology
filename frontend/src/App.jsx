@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <header>
-        <img src="/logo.png" alt="Company Logo" />
+        <img src="https://drive.google.com/file/d/1HY7yG9rbF46vD331m4KrHlLb3mI-CDl5/view?usp=drive_link" alt="Company Logo" />
         <nav>
           <Link to="/login">Login</Link>
           <Link to="/signup">Signup</Link>
