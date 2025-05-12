@@ -1,11 +1,17 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const mongoose = require("mongoose");
+
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 const { resolve } = require("path");
+
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+const authRoutes = require("./auth");
+app.use(authRoutes);
 // Replace if using a different env file or config
 const env = require("dotenv").config({ path: "./.env" });
 

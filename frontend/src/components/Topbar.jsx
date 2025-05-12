@@ -1,6 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
+function LogoutButton() {
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    navigate("/login");
+  };
+  return (
+    <button onClick={handleLogout} style={{ marginLeft: "1rem" }}>
+      Logout
+    </button>
+  );
+}
 const Topbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
