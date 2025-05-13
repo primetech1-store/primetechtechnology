@@ -21,7 +21,7 @@ const Carousel = () => {
         <img src={offerItems[current].image} alt={offerItems[current].name} />
         <h3>{offerItems[current].name}</h3>
         <p>{offerItems[current].description}</p>
-        <p>USD {offerItems[current].price}</p>
+        <p>ZAR {offerItems[current].price}</p>
       </div>
       <button onClick={next}>&gt;</button>
     </div>
