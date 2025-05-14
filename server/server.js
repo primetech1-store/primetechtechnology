@@ -1,17 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const mongoose = require("mongoose");
-
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 const { resolve } = require("path");
-
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
-const authRoutes = require("./auth");
-app.use(authRoutes);
 // Replace if using a different env file or config
 const env = require("dotenv").config({ path: "./.env" });
 
@@ -35,7 +29,7 @@ app.post("/create-payment-intent", async (req, res) => {
   const amount = Math.round(total * 100);
   try {
     const paymentIntent = await stripe.paymentIntents.create({
-      currency: "ZAR",
+      currency: "KES",
       amount: amount,
       automatic_payment_methods: { enabled: true },
     });

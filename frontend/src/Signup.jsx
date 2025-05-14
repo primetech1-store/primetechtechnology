@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "https://your-vercel-backend.vercel.app"; // Change to your backend URL
+const API_URL = "https://primetech-store.vercel.app/"; // Change to your backend URL
 
 function Signup() {
   const [email, setEmail] = useState("");
