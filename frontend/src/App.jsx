@@ -14,8 +14,8 @@ function App() {
       <header>
         <img src="/logo.jpg" alt="Company Logo" />
         <nav>
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Signup</Link>
+          <Link to="/Login">Login</Link>
+          <Link to="/Signup">Signup</Link>
         </nav>
       </header>
 
