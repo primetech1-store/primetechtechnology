@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <header>
-        <img src="https://drive.google.com/file/d/1_MpD8Wb_SOy0iBem6kV6KTV_fyf3_HoM/view?usp=drive_link" alt="Company Logo" />
+        <img src="/images/logo.jpg" alt="Company Logo" />
         <nav>
           <Link to="/login">Login</Link>
           <Link to="/signup">Signup</Link>
