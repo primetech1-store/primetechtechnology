@@ -19,140 +19,140 @@
   { 
     "id": 4, 
     "title": "iPhone 15 256GB - Brand New", 
-    "price": 16500, "image": "/public/iphone 15.jpg", 
+    "price": 16500, "image": "/public/iphone15.jpg", 
     "description": "Premium quality iPhone. Brand New. Includes: AirPods, 1-Year Warranty, Free Cover & Glass Protector." 
   },
   { 
     "id": 5, 
     "title": "iPhone 14 Pro Max 128GB, 256GB - Brand New", 
     "price": 15500, 
-    "image": "/public/iphone14 pro max.jpg", 
+    "image": "/public/iphone14promax.jpg", 
     "description": "Premium quality iPhone. Brand New. Includes: AirPods, 1-Year Warranty, Free Cover & Glass Protector." 
   },
   { 
     "id": 6, 
     "title": "iPhone 14 Pro 128GB, 256GB - Brand New", 
     "price": 14200, 
-    "image": "/public/iphone 14 pro max.jpg", 
+    "image": "/public/iphone 14promax.jpg", 
     "description": "Premium quality iPhone. " 
   },
   { 
     "id": 7, 
     "title": "iPhone 14 Plus 128GB, 256GB - Brand New", 
     "price": 13100, 
-    "image": "/public/iphone 14 plus.jpg", 
+    "image": "/public/iphone14plus.jpg", 
     "description": "Premium quality iPhone. Brand New. Includes: AirPods, 1-Year Warranty, Free Cover & Glass Protector." 
   },
   { 
     "id": 8, 
     "title": "iPhone 14 128GB, 256GB - Brand New", 
     "price": 12900, 
-    "image": "/public/iphone 14 plus.jpg", 
+    "image": "/public/iphone14plus.jpg", 
     "description": "Premium quality iPhone. Brand New. Includes: AirPods, 1-Year Warranty, Free Cover & Glass Protector." 
   },
   { 
     "id": 9, 
     "title": "iPhone 13 Pro Max 128GB, 256GB - Pre-Owned", 
     "price": 11800, 
-    "image": "/public/iphone 13 pro max.jpg", 
+    "image": "/public/iphone13promax.jpg", 
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 10, 
     "title": "iPhone 13 Pro 256GB - Pre-Owned", 
     "price": 10000, 
-    "image": "/public/iphone 13 pro.jpg", 
+    "image": "/public/iphone13pro.jpg", 
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 11, 
     "title": "iPhone 12 Pro Max 128GB, 256GB - Pre-Owned", 
     "price": 9100, 
-    "image": "/public/iphone 12 pro max.jpg", 
+    "image": "/public/iphone12promax.jpg", 
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 12, 
     "title": "iPhone 12 Pro 256GB - Pre-Owned", 
     "price": 7700, 
-    "image": "/public/iphone 12 pro max.jpg", 
+    "image": "/public/iphone12promax.jpg", 
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 13, 
     "title": "iPhone 12 64GB, 128GB - Pre-Owned", 
     "price": 6900, 
-    "image": "/public/iphone 12 pro max.jpg", 
+    "image": "/public/iphone12promax.jpg", 
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 14, 
     "title": "iPhone 11 Pro Max 64GB, 256GB - Pre-Owned", 
     "price": 6500, 
-    "image": "/public/iphone 11 pro max.jpg", 
+    "image": "/public/iphone11promax.jpg", 
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 15, 
     "title": "iPhone 11 Pro 64GB, 128GB - Pre-Owned", 
     "price": 5500, 
-    "image": "/public/iphone 11 pro max.jpg", 
+    "image": "/public/iphone11promax.jpg", 
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 17, 
     "title": "iPhone 11 64GB, 128GB, 256GB - Pre-Owned [Limited Stock]", 
     "price": 4000, 
-    "image": "/public/iphone 11.jpg", 
+    "image": "/public/iphone11.jpg", 
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 18, 
     "title": "iPhone XS Max 64GB, 256GB - Pre-Owned", 
     "price": 4000, 
-    "image": "/public/iphone xs.jpg", 
+    "image": "/public/iphonexs.jpg", 
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 19, 
     "title": "iPhone XS 64GB,256GB - Pre-Owned", 
     "price": 3900, 
-    "image": "/public/iphone xs.jpg", 
+    "image": "/public/iphonexs.jpg", 
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 20, 
     "title": "iPhone XR 64GB, 128GB - Pre-Owned", 
     "price": 3950, 
-    "image": "/public/iphone xr.jpg", 
+    "image": "/public/iphonexr.jpg", 
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 21, 
     "title": "iPhone X 128GB,256GB - Pre-Owned", 
     "price": 3700, 
-    "image": "/public/iphone x.jpg", 
+    "image": "/public/iphonex.jpg", 
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 22, 
     "title": "iPhone 8 Plus 64GB, 256GB - Pre-Owned [Limited Stock]", 
     "price": 3500, 
-    "image": "/public/iphone 8.jpg",
+    "image": "/public/iphone8.jpg",
     "description": "Premium quality iPhone." 
   },
   { 
     "id": 23, 
     "title": "iPhone 8 64GB, 256GB - Pre-Owned", 
     "price": 2800, 
-    "image": "/public/iphone 8.jpg",
+    "image": "/public/iphone8.jpg",
     "description": "" 
   },
   { 
     "id": 24, 
     "title": "iPhone 7 Plus 32GB, 128GB - Pre-Owned", 
     "price": 2900, 
-    "image": "/public/iphone 7.jpg", 
+    "image": "/public/iphone7.jpg", 
     "description": "Premium quality iPhone." 
   }
 ]
