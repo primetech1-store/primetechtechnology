@@ -1,159 +1,163 @@
 [
-  { "id": 1,
-    "title": "iPhone 15 Pro Max 128GB, 256GB - Brand New", 
-    "price": 23700, 
-    "image": "https://commons.wikimedia.org/wiki/File:IPhone_15_Pro_Max.jpeg", 
-    "description": "Premium quality iPhone. Brand New. Includes: AirPods, 1-Year Warranty, Free Cover & Glass Protector." 
+  {
+    "id": 1,
+    "title": "iPhone 15 Pro Max 128GB, 256GB - Brand New",
+    "price": 23700,
+    "image": "/iphone15promax.jpg",
+    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
   {
-    "id": 2, 
-    "title": "iPhone 15 Pro 128GB, 256GB - Brand New", 
-    "price": 19700, "image": "https://commons.wikimedia.org/wiki/File:IPhone_15_Pro.jpeg", 
-    "description": "Premium quality iPhone. Brand New. Includes: AirPods, 1-Year Warranty, Free Cover & Glass Protector." 
+    "id": 2,
+    "title": "iPhone 15 Pro 128GB, 256GB - Brand New",
+    "price": 19700,
+    "image": "/iphone15pro.jpg",
+    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { "id": 3, 
-    "title": "iPhone 15 Plus 256GB - Brand New", 
-    "price": 17400, "image": "https://commons.wikimedia.org/wiki/File:IPhone_15_plus.jpg", 
-    "description": "Premium quality iPhone. Brand New. Includes: AirPods, 1-Year Warranty, Free Cover & Glass Protector." 
+  {
+    "id": 3,
+    "title": "iPhone 15 Plus 256GB - Brand New",
+    "price": 17400,
+    "image": "/iphone15plus.jpg",
+    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 4, 
-    "title": "iPhone 15 256GB - Brand New", 
-    "price": 16500, "image": "/iphone15.jpg", 
-    "description": "Premium quality iPhone. Brand New. Includes: AirPods, 1-Year Warranty, Free Cover & Glass Protector." 
+  {
+    "id": 4,
+    "title": "iPhone 15 256GB - Brand New",
+    "price": 16500,
+    "image": "/iphone15.jpg",
+    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 5, 
-    "title": "iPhone 14 Pro Max 128GB, 256GB - Brand New", 
-    "price": 15500, 
-    "image": "/iphone14promax.jpg", 
-    "description": "Premium quality iPhone. Brand New. Includes: AirPods, 1-Year Warranty, Free Cover & Glass Protector." 
+  {
+    "id": 5,
+    "title": "iPhone 14 Pro Max 128GB, 256GB - Brand New",
+    "price": 15500,
+    "image": "/iphone14promax.jpg",
+    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 6, 
-    "title": "iPhone 14 Pro 128GB, 256GB - Brand New", 
-    "price": 14200, 
-    "image": "/iphone 14promax.jpg", 
-    "description": "Premium quality iPhone. " 
+  {
+    "id": 6,
+    "title": "iPhone 14 Pro 128GB, 256GB - Brand New",
+    "price": 14200,
+    "image": "/iphone14pro.jpg",
+    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 7, 
-    "title": "iPhone 14 Plus 128GB, 256GB - Brand New", 
-    "price": 13100, 
-    "image": "/iphone14plus.jpg", 
-    "description": "Premium quality iPhone. Brand New. Includes: AirPods, 1-Year Warranty, Free Cover & Glass Protector." 
+  {
+    "id": 7,
+    "title": "iPhone 14 Plus 128GB, 256GB - Brand New",
+    "price": 13100,
+    "image": "/iphone14plus.jpg",
+    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 8, 
-    "title": "iPhone 14 128GB, 256GB - Brand New", 
-    "price": 12900, 
-    "image": "/iphone14plus.jpg", 
-    "description": "Premium quality iPhone. Brand New. Includes: AirPods, 1-Year Warranty, Free Cover & Glass Protector." 
+  {
+    "id": 8,
+    "title": "iPhone 14 128GB, 256GB - Brand New",
+    "price": 12900,
+    "image": "/iphone14.jpg",
+    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 9, 
-    "title": "iPhone 13 Pro Max 128GB, 256GB - Pre-Owned", 
-    "price": 11800, 
-    "image": "/iphone13promax.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 9,
+    "title": "iPhone 13 Pro Max 128GB, 256GB - Pre-Owned",
+    "price": 11800,
+    "image": "/iphone13promax.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 10, 
-    "title": "iPhone 13 Pro 256GB - Pre-Owned", 
-    "price": 10000, 
-    "image": "/iphone13pro.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 10,
+    "title": "iPhone 13 Pro 256GB - Pre-Owned",
+    "price": 10000,
+    "image": "/iphone13pro.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 11, 
-    "title": "iPhone 12 Pro Max 128GB, 256GB - Pre-Owned", 
-    "price": 9100, 
-    "image": "/iphone12promax.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 11,
+    "title": "iPhone 12 Pro Max 128GB, 256GB - Pre-Owned",
+    "price": 9100,
+    "image": "/iphone12promax.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 12, 
-    "title": "iPhone 12 Pro 256GB - Pre-Owned", 
-    "price": 7700, 
-    "image": "/iphone12promax.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 12,
+    "title": "iPhone 12 Pro 256GB - Pre-Owned",
+    "price": 7700,
+    "image": "/iphone12pro.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 13, 
-    "title": "iPhone 12 64GB, 128GB - Pre-Owned", 
-    "price": 6900, 
-    "image": "/iphone12promax.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 13,
+    "title": "iPhone 12 64GB, 128GB - Pre-Owned",
+    "price": 6900,
+    "image": "/iphone12.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 14, 
-    "title": "iPhone 11 Pro Max 64GB, 256GB - Pre-Owned", 
-    "price": 6500, 
-    "image": "/iphone11promax.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 14,
+    "title": "iPhone 11 Pro Max 64GB, 256GB - Pre-Owned",
+    "price": 6500,
+    "image": "/iphone11promax.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 15, 
-    "title": "iPhone 11 Pro 64GB, 128GB - Pre-Owned", 
-    "price": 5500, 
-    "image": "/iphone11promax.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 15,
+    "title": "iPhone 11 Pro 64GB, 128GB - Pre-Owned",
+    "price": 5500,
+    "image": "/iphone11pro.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 17, 
-    "title": "iPhone 11 64GB, 128GB, 256GB - Pre-Owned [Limited Stock]", 
-    "price": 4000, 
-    "image": "/iphone11.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 16,
+    "title": "iPhone 11 64GB, 128GB, 256GB - Pre-Owned [Limited Stock]",
+    "price": 4000,
+    "image": "/iphone11.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 18, 
-    "title": "iPhone XS Max 64GB, 256GB - Pre-Owned", 
-    "price": 4000, 
-    "image": "/iphonexs.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 17,
+    "title": "iPhone XS Max 64GB, 256GB - Pre-Owned",
+    "price": 4000,
+    "image": "/iphonexsmax.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 19, 
-    "title": "iPhone XS 64GB,256GB - Pre-Owned", 
-    "price": 3900, 
-    "image": "/iphonexs.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 18,
+    "title": "iPhone XS 64GB, 256GB - Pre-Owned",
+    "price": 3900,
+    "image": "/iphonexs.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 20, 
-    "title": "iPhone XR 64GB, 128GB - Pre-Owned", 
-    "price": 3950, 
-    "image": "/iphonexr.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 19,
+    "title": "iPhone XR 64GB, 128GB - Pre-Owned",
+    "price": 3950,
+    "image": "/iphonexr.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 21, 
-    "title": "iPhone X 128GB,256GB - Pre-Owned", 
-    "price": 3700, 
-    "image": "/iphonex.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 20,
+    "title": "iPhone X 128GB, 256GB - Pre-Owned",
+    "price": 3700,
+    "image": "/iphonex.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 22, 
-    "title": "iPhone 8 Plus 64GB, 256GB - Pre-Owned [Limited Stock]", 
-    "price": 3500, 
+  {
+    "id": 21,
+    "title": "iPhone 8 Plus 64GB, 256GB - Pre-Owned [Limited Stock]",
+    "price": 3500,
+    "image": "/iphone8plus.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+  },
+  {
+    "id": 22,
+    "title": "iPhone 8 64GB, 256GB - Pre-Owned",
+    "price": 2800,
     "image": "/iphone8.jpg",
-    "description": "Premium quality iPhone." 
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
-  { 
-    "id": 23, 
-    "title": "iPhone 8 64GB, 256GB - Pre-Owned", 
-    "price": 2800, 
-    "image": "/iphone8.jpg",
-    "description": "" 
-  },
-  { 
-    "id": 24, 
-    "title": "iPhone 7 Plus 32GB, 128GB - Pre-Owned", 
-    "price": 2900, 
-    "image": "/iphone7.jpg", 
-    "description": "Premium quality iPhone." 
+  {
+    "id": 23,
+    "title": "iPhone 7 Plus 32GB, 128GB - Pre-Owned",
+    "price": 2900,
+    "image": "/iphone7plus.jpg",
+    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   }
 ]
- 
