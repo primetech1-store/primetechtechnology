@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <header>
-        <img src="/images/logo.jpg" alt="Company Logo" />
+        <img src="/logo.jpg" alt="Company Logo" />
         <nav>
           <Link to="/login">Login</Link>
           <Link to="/signup">Signup</Link>
