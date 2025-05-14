@@ -1,5 +1,5 @@
 import React from "react";
-import items from "/frontend/public/products.json";
+import items from "/frontend/products.json";
 import { Link } from "react-router-dom";
 
 const Items = () => {
