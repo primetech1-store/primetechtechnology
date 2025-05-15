@@ -3,9 +3,9 @@ import { useState } from "react";
 import "./../App.css";
 
 const offerItems = [
-  { id: 1, name: "Blue Headphones", description: "20% off!", price: 40, image: "https://commons.wikimedia.org/wiki/File:IPhone_15_Pro.jpeg" },
-  { id: 2, name: "Silver Watch", description: "Limited time deal", price: 120, image: "https://commons.wikimedia.org/wiki/File:IPhone_15_Pro.jpeg" },
-  { id: 3, name: "Smart Speaker", description: "Buy 1 Get 1 Free", price: 60, image: "https://commons.wikimedia.org/wiki/File:IPhone_15_Pro.jpeg" },
+  { id: 1, name: "Iphone 16 promax", description: "20% off!", price: 40, image: "C:/Projects/primetechStore/frontend/public/iphone16promax.jpg" },
+  { id: 2, name: "Silver Watch", description: "Limited time deal", price: 120, image: "primetechStore/frontend/public/playstation 4 pro 1 TB.jpg" },
+  { id: 3, name: "Smart Speaker", description: "Buy 1 Get 1 Free", price: 60, image: "primetechStore/frontend/public/playstation 5 standard edition.jpg" },
 ];
 
 const Carousel = () => {
