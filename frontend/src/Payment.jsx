@@ -12,7 +12,7 @@ function Payment() {
   const items = JSON.parse(localStorage.getItem("cart")) || [];
 
   useEffect(() => {
-    fetch("https://stripe-eta-eight.vercel.app/config").then(
+    fetch("https://primetech-store.vercel.app/config").then(
       async (r) => {
         const { publishableKey } = await r.json();
         setStripePromise(loadStripe(publishableKey));
@@ -22,7 +22,7 @@ function Payment() {
 
   const startPayment = () => {
     setPaymentStarted(true);
-    fetch("https://stripe-eta-eight.vercel.app/create-payment-intent", {
+    fetch("https://primetech-store.vercel.app/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ items }),
