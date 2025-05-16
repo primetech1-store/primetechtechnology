@@ -103,73 +103,77 @@ header nav a:hover {
   color: #555;
   margin: 4px 0;
 }
-
 /* Product Cards */
 .item-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 28px;
-  padding: 24px 0;
+  padding: 32px 0;
 }
 
 .item-card {
-  background: #fff;
-  border: 2px solid #c0c0c0;
-  border-radius: 18px;
+  background: linear-gradient(145deg, #f8fbff, #e6eef8);
+  border: 1px solid #d0d7e0;
+  border-radius: 20px;
   width: 260px;
-  padding: 18px;
+  padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 12px rgba(30,144,255,0.08);
-  transition: box-shadow 0.2s, border 0.2s;
+  box-shadow: 0 6px 20px rgba(30, 144, 255, 0.12);
+  transition: all 0.3s ease;
 }
 
 .item-card:hover {
-  border: 2px solid #1e90ff;
-  box-shadow: 0 4px 24px rgba(30,144,255,0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(30, 144, 255, 0.2);
+  border-color: #1e90ff;
 }
 
 .item-card img {
-  max-width: 100%;
-  height: 140px;
+  width: 100%;
+  height: 160px;
   object-fit: cover;
   border-radius: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   background: #f0f8ff;
+  box-shadow: 0 2px 10px rgba(192, 192, 192, 0.2);
 }
 
 .item-card h3 {
-  margin: 10px 0 6px 0;
+  margin: 12px 0 6px 0;
   color: #1e90ff;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 600;
 }
 
 .item-card p {
-  margin: 5px 0;
-  color: #555;
+  margin: 6px 0;
+  color: #444;
+  font-size: 0.95rem;
 }
 
-.remove-button,
-.item-card button {
-  background: linear-gradient(90deg, #c0c0c0 80%, #1e90ff 100%);
-  color: #222;
+.item-card button,
+.remove-button {
+  background: linear-gradient(90deg, #c0c0c0 0%, #1e90ff 100%);
+  color: #fff;
   border: none;
-  border-radius: 12px;
-  padding: 10px 18px;
-  font-size: 1rem;
+  border-radius: 14px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 12px;
   font-weight: 500;
-  transition: background 0.2s, color 0.2s;
-  box-shadow: 0 2px 8px rgba(192,192,192,0.10);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(30, 144, 255, 0.15);
 }
 
-.remove-button:hover,
-.item-card button:hover {
+.item-card button:hover,
+.remove-button:hover {
   background: #1e90ff;
   color: #fff;
+  transform: scale(1.03);
 }
+
 
 .auth-form {
   background: #fff;
