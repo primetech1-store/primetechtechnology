@@ -8,11 +8,38 @@ import Login from "./Login";
 import Signup from "./Signup";
 import Carousel from "./components/carousel";
 import { useState } from "react";
-import { FaFacebookMessenger, FaWhatsapp, FaInstagram } from "react-icons/fa";
+
+const FloatingContactButton = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="floating-button-container">
+      <div className={`contact-options ${open ? "open" : ""}`}>
+        <a
+          href="https://wa.me/27721234567"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link whatsapp"
+        >
+          WhatsApp
+        </a>
+        <a
+          href="https://instagram.com/yourprofile"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link instagram"
+        >
+          Instagram
+        </a>
+      </div>
+      <button className="floating-button" onClick={() => setOpen(!open)}>
+        ✉️
+      </button>
+    </div>
+  );
+};
 
 function App() {
-  const [showContacts, setShowContacts] = useState(false);
-
   return (
     <BrowserRouter>
       <header>
@@ -34,19 +61,7 @@ function App() {
         </Routes>
       </main>
 
-      <div className="floating-button-container">
-        <button className="floating-button" onClick={() => setShowContacts(!showContacts)}>
-          <FaFacebookMessenger size={24} />
-        </button>
-        <div className={`contact-options ${showContacts ? 'open' : ''}`}>
-          <a href="https://wa.me/27721234567" target="_blank" rel="noopener noreferrer" className="contact-link">
-            <FaWhatsapp size={20} />
-          </a>
-          <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="contact-link">
-            <FaInstagram size={20} />
-          </a>
-        </div>
-      </div>
+      <FloatingContactButton />
     </BrowserRouter>
   );
 }
