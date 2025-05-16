@@ -35,7 +35,7 @@ const Items = () => {
           >
             <img src={item.image} className="product-image" alt={item.name} />
             <div className="product-details">
-              <h3 className="product-title">{item.name}</h3>
+              <h3 className="product-title">{item.title}</h3>
               {expandedItemId === item.id && (
                 <>
                   <p>{item.title}</p>
