@@ -42,7 +42,7 @@ const Items = () => {
                   <p>{item.description}</p>
                 </>
               )}
-              <p>Price: ZAR {item.price}</p>
+              <p>Price: TL {item.price}</p>
               <button
                 onClick={(e) => {
                   e.stopPropagation();

@@ -55,7 +55,7 @@ const Carousel = () => {
             <img src={item.image} alt={item.name} />
             <h3>{item.name}</h3>
             <p>{item.description}</p>
-            <p>ZAR {item.price}</p>
+            <p>TL {item.price}</p>
           </div>
         ))}
       </div>
