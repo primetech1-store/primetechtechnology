@@ -7,6 +7,37 @@ import Topbar from "./components/Topbar";
 import Login from "./Login";
 import Signup from "./Signup";
 import Carousel from "./components/carousel";
+import { useState } from "react";
+
+const FloatingContactButton = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="floating-button-container">
+      <div className={`contact-options ${open ? "open" : ""}`}>
+        <a
+          href="https://wa.me/27721234567"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link whatsapp"
+        >
+          WhatsApp
+        </a>
+        <a
+          href="https://instagram.com/yourprofile"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link instagram"
+        >
+          Instagram
+        </a>
+      </div>
+      <button className="floating-button" onClick={() => setOpen(!open)}>
+        ✉️
+      </button>
+    </div>
+  );
+};
 
 function App() {
   return (
@@ -29,6 +60,8 @@ function App() {
           <Route path="/completion" element={<Completion />} />
         </Routes>
       </main>
+
+      <FloatingContactButton />
     </BrowserRouter>
   );
 }
