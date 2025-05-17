@@ -53,7 +53,7 @@ function Payment() {
             <img src={item.image} className="product-image" alt={item.name} />
             <h3>{item.name}</h3>
             <p>{item.description}</p>
-            <p>Price: TL {item.price}</p>
+            <p>Price: ZAR {item.price}</p>
             <button
               className="remove-button"
               onClick={() => handleRemove(item)}
