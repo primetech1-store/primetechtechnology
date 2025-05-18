@@ -9,9 +9,6 @@ import Signup from "./Signup";
 import Carousel from "./components/carousel";
 import { useState } from "react";
 
-// Add react-icons
-import { FaWhatsapp, FaInstagram, FaEnvelope } from "react-icons/fa";
-
 const FloatingContactButton = () => {
   const [open, setOpen] = useState(false);
 
@@ -24,7 +21,6 @@ const FloatingContactButton = () => {
           rel="noopener noreferrer"
           className="contact-link whatsapp"
         >
-          <FaWhatsapp style={{ marginRight: "8px" }} />
           WhatsApp
         </a>
         <a
@@ -33,7 +29,6 @@ const FloatingContactButton = () => {
           rel="noopener noreferrer"
           className="contact-link instagram"
         >
-          <FaInstagram style={{ marginRight: "8px" }} />
           Instagram
         </a>
       </div>
