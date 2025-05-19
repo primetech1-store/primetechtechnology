@@ -289,16 +289,25 @@ header nav a:hover {
   margin-top: 2rem;
 }
 
-.footer-title {
+.footer-title-link {
+  display: inline-block;
+  text-decoration: none;
   font-size: 1.6rem;
   font-weight: bold;
   background: linear-gradient(90deg, #8e2de2, #4a00e0);
   color: #fff;
-  padding: 12px 24px;
+  padding: 12px 28px;
   border-radius: 12px;
-  display: inline-block;
   margin-bottom: 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+.footer-title-link:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
 
 .footer-benefits {
   display: flex;
