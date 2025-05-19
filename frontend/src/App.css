@@ -232,27 +232,28 @@ header nav a:hover {
 }
 
 .floating-button {
-  background: linear-gradient(90deg, #1e90ff 80%, #c0c0c0 100%);
+  background-color: #1e90ff;
   color: white;
   border: none;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.floating-button:hover {
-  transform: rotate(90deg);
+  transition: background 0.3s;
 }
 
 .contact-options {
   display: none;
   flex-direction: column;
-  align-items: flex-end;
-  margin-bottom: 10px;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  gap: 12px;
 }
 
 .contact-options.open {
@@ -260,31 +261,25 @@ header nav a:hover {
 }
 
 .contact-link {
-  margin: 6px 0;
-  padding: 10px 16px;
+  background: #f1f1f1;
+  padding: 10px 14px;
   border-radius: 12px;
   text-decoration: none;
-  font-weight: 600;
-  color: white;
-  transition: background 0.2s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #222;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
 }
 
 .contact-link.whatsapp {
-  background-color: #25d366;
-}
-
-.contact-link.whatsapp:hover {
-  background-color: #1ebe57;
+  color: #25d366;
 }
 
 .contact-link.instagram {
-  background-color: #e1306c;
+  color: #e4405f;
 }
 
-.contact-link.instagram:hover {
-  background-color: #c72b5e;
-}
 .footer {
   padding: 2rem 1rem;
   background: linear-gradient(90deg, #f8f8f8 60%, #e6f0fa 100%);

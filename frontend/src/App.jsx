@@ -9,6 +9,9 @@ import Signup from "./Signup";
 import Carousel from "./components/carousel";
 import { useState } from "react";
 
+// ✅ Import social icons
+import { FaWhatsapp, FaInstagram, FaFacebookMessenger } from "react-icons/fa";
+
 const FloatingContactButton = () => {
   const [open, setOpen] = useState(false);
 
@@ -21,6 +24,7 @@ const FloatingContactButton = () => {
           rel="noopener noreferrer"
           className="contact-link whatsapp"
         >
+          <FaWhatsapp style={{ marginRight: "6px" }} />
           WhatsApp
         </a>
         <a
@@ -29,10 +33,12 @@ const FloatingContactButton = () => {
           rel="noopener noreferrer"
           className="contact-link instagram"
         >
+          <FaInstagram style={{ marginRight: "6px" }} />
           Instagram
         </a>
       </div>
       <button className="floating-button" onClick={() => setOpen(!open)}>
+        <FaFacebookMessenger size={22} />
       </button>
     </div>
   );
@@ -40,24 +46,23 @@ const FloatingContactButton = () => {
 
 const Footer = () => (
   <footer className="footer">
-  <h2 className="footer-title">
-    <a href="/" className="shop-button">SHOP & ENJOY</a>
-  </h2>
+    <h2 className="footer-title">
+      <a href="/" className="shop-button">SHOP & ENJOY</a>
+    </h2>
 
-  <div className="footer-features">
-    <div className="footer-feature">
-      <img src="/icons/shipping-icon.png" alt="Free Shipping" />
-      <h4>Free Shipping</h4>
-      <p>Get Free shipping countryWide</p>
+    <div className="footer-features">
+      <div className="footer-feature">
+        <img src="/icons/shipping-icon.png" alt="Free Shipping" />
+        <h4>Free Shipping</h4>
+        <p>Get Free shipping countryWide</p>
+      </div>
+      <div className="footer-feature">
+        <img src="/icons/secure-icon.png" alt="Secure Payment" />
+        <h4>Secure Payment</h4>
+        <p>Easily Pay with our secure payment modes</p>
+      </div>
     </div>
-    <div className="footer-feature">
-      <img src="/icons/secure-icon.png" alt="Secure Payment" />
-      <h4>Secure Payment</h4>
-      <p>Easily Pay with our secure payment modes</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 );
 
 function App() {
