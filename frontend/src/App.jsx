@@ -55,7 +55,7 @@ function App() {
 
       {/* Floating Text Buttons */}
       <a
-        href="https://wa.me/27721234567"
+        href="https://wa.me/+27616117311"
         target="_blank"
         rel="noopener noreferrer"
         className="floating-text-button whatsapp"
@@ -63,7 +63,7 @@ function App() {
         WhatsApp
       </a>
       <a
-        href="https://instagram.com/yourprofile"
+        href="https://instagram.com/primetech_technology"
         target="_blank"
         rel="noopener noreferrer"
         className="floating-text-button instagram"
