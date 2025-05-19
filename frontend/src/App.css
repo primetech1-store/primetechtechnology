@@ -280,3 +280,51 @@ header nav a:hover {
 .contact-link.instagram:hover {
   background-color: #c72b5e;
 }
+.footer {
+  background: linear-gradient(90deg, #f8f8f8 0%, #e6f0fa 100%);
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-radius: 24px;
+  margin-top: 2rem;
+}
+
+.footer-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.footer-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.benefit {
+  max-width: 280px;
+}
+
+.benefit img {
+  height: 48px;
+  margin-bottom: 8px;
+}
+
+.benefit-heading {
+  color: #1e90ff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.footer-note {
+  font-size: 0.9rem;
+  color: #888;
+}

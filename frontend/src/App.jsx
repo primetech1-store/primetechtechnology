@@ -38,6 +38,25 @@ const FloatingContactButton = () => {
   );
 };
 
+const Footer = () => (
+  <footer className="footer">
+    <h2 className="footer-title">SHOP & ENJOY</h2>
+    <div className="footer-benefits">
+      <div className="benefit">
+        <img src="/icons/shipping-icon.png" alt="Shipping" />
+        <h4 className="benefit-heading">Free Shipping</h4>
+        <p>Get Free shipping countrywide</p>
+      </div>
+      <div className="benefit">
+        <img src="/icons/secure-icon.png" alt="Secure" />
+        <h4 className="benefit-heading">Secure Payment</h4>
+        <p>Easily pay with our secure payment modes</p>
+      </div>
+    </div>
+    <p className="footer-note">© {new Date().getFullYear()} PrimeTech Technology. All rights reserved.</p>
+  </footer>
+);
+
 function App() {
   return (
     <BrowserRouter>
@@ -60,6 +79,7 @@ function App() {
         </Routes>
       </main>
 
+      <Footer />
       <FloatingContactButton />
     </BrowserRouter>
   );
