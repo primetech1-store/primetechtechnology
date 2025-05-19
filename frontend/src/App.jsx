@@ -46,12 +46,12 @@ const Footer = () => (
 
   <div className="footer-features">
     <div className="footer-feature">
-      <img src="/shipping-icon.png" alt="Free Shipping" />
+      <img src="/icons/shipping-icon.png" alt="Free Shipping" />
       <h4>Free Shipping</h4>
       <p>Get Free shipping countryWide</p>
     </div>
     <div className="footer-feature">
-      <img src="/secure-icon.png" alt="Secure Payment" />
+      <img src="/icons/secure-icon.png" alt="Secure Payment" />
       <h4>Secure Payment</h4>
       <p>Easily Pay with our secure payment modes</p>
     </div>
