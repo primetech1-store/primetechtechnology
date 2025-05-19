@@ -33,7 +33,6 @@ const FloatingContactButton = () => {
         </a>
       </div>
       <button className="floating-button" onClick={() => setOpen(!open)}>
-        <FaEnvelope />
       </button>
     </div>
   );
