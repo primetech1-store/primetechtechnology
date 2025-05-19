@@ -350,6 +350,17 @@ img {
   height: auto;
   display: block;
 }
+@media (max-width: 768px) {
+  .footer-features {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-feature {
+    margin-bottom: 1.5rem;
+  }
+}
 
 @media (max-width: 768px) {
   .item-card {
