@@ -328,6 +328,9 @@ header nav a:hover {
 .benefit img {
   height: 48px;
   margin-bottom: 8px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .benefit-heading {
