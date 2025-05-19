@@ -224,60 +224,33 @@ header nav a:hover {
   background: #4682b4;
 }
 
-.floating-button-container {
+.floating-text-button {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 1000;
-}
-
-.floating-button {
-  background-color: #1e90ff;
+  right: 18px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 20px;
   color: white;
-  border: none;
-  border-radius: 50%;
-  width: 56px;
-  height: 56px;
-  font-size: 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.contact-options {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  bottom: 70px;
-  right: 0;
-  gap: 12px;
-}
-
-.contact-options.open {
-  display: flex;
-}
-
-.contact-link {
-  background: #f1f1f1;
-  padding: 10px 14px;
-  border-radius: 12px;
   text-decoration: none;
-  color: #222;
-  font-weight: 500;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 999;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.contact-link.whatsapp {
-  color: #25d366;
+.floating-text-button:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
 }
 
-.contact-link.instagram {
-  color: #e4405f;
+.floating-text-button.whatsapp {
+  bottom: 90px;
+  background-color: #25D366; /* WhatsApp green */
+}
+
+.floating-text-button.instagram {
+  bottom: 30px;
+  background: #E1306C; /* Instagram red/pink */
 }
 
 .footer {
