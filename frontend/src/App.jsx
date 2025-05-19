@@ -40,7 +40,7 @@ const FloatingContactButton = () => {
 
 const Footer = () => (
   <footer className="footer">
-    <h2 className="footer-title">SHOP & ENJOY</h2>
+    <Link to="/" className="footer-title-link">SHOP & ENJOY</Link>
     <div className="footer-benefits">
       <div className="benefit">
         <img src="/icons/shipping-icon.png" alt="Shipping" />
