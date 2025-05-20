@@ -3,8 +3,11 @@ import "./../App.css";
 
 const offerItems = [
   { id: 1, name: "Happy client", image: "happyclient1.jpg" },
-  { id: 2, name: "PS 4", description: "Limited time deal", image: "playstation 4 pro 1 TB.jpg" },
-  { id: 3, name: "PS 5", description: "Buy 1 Get 1 Free", image: "playstation 5 standard edition.jpg" },
+  { id: 1, name: "Happy client", image: "happyclient2.jpg" },
+  { id: 1, name: "Happy client", image: "happyclient3.jpg" },
+  { id: 1, name: "Happy client", image: "happyclient4.jpg" },
+  { id: 1, name: "Happy client", image: "happyclient5.jpg" },
+
 ];
 
 const Carousel = () => {
