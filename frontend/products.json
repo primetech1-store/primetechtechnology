@@ -38,7 +38,7 @@
     "id": 6,
     "title": "iPhone 14 Pro 128GB, 256GB - Brand New",
     "price": 14200,
-    "image": "https://commons.wikimedia.org/wiki/File:IPhone_14_Pro_Max_Deep_purple_A2896_China,_Hong_Kong_and_Macao_version_rear.jpg#/media/File:IPhone_14_Pro_Max_Deep_purple_A2896_China,_Hong_Kong_and_Macao_version_rear.jpg",
+    "image": "/iphone14pro.jpg",
     "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
   {
@@ -52,7 +52,7 @@
     "id": 8,
     "title": "iPhone 14 128GB, 256GB - Brand New",
     "price": 12900,
-    "image": "https://commons.wikimedia.org/wiki/Category:IPhone_14#/media/File:IPhone_14_Product_Red.jpg",
+    "image": "/iphone14.jpg",
     "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
   {
@@ -80,7 +80,7 @@
     "id": 12,
     "title": "iPhone 12 Pro 256GB - Pre-Owned",
     "price": 7700,
-    "image": "https://commons.wikimedia.org/wiki/Category:IPhone_12_Pro#/media/File:Iphone-12-5766344_1920.jpg",
+    "image": "/iphone12pro.jpg",
     "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
   },
   {
