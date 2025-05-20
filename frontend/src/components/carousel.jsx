@@ -2,9 +2,9 @@ import { useEffect, useState, useRef } from "react";
 import "./../App.css";
 
 const offerItems = [
-  { id: 1, name: "Iphone 16 promax", description: "20% off!", price: 400, image: "iphone15plus.jpg" },
-  { id: 2, name: "PS 4", description: "Limited time deal", price: 1020, image: "playstation 4 pro 1 TB.jpg" },
-  { id: 3, name: "PS 5", description: "Buy 1 Get 1 Free", price: 600, image: "playstation 5 standard edition.jpg" },
+  { id: 1, name: "Happy client", image: "happyclient1.jpg" },
+  { id: 2, name: "PS 4", description: "Limited time deal", image: "playstation 4 pro 1 TB.jpg" },
+  { id: 3, name: "PS 5", description: "Buy 1 Get 1 Free", image: "playstation 5 standard edition.jpg" },
 ];
 
 const Carousel = () => {
@@ -55,7 +55,6 @@ const Carousel = () => {
             <img src={item.image} alt={item.name} />
             <h3>{item.name}</h3>
             <p>{item.description}</p>
-            <p>ZAR {item.price}</p>
           </div>
         ))}
       </div>
