@@ -58,73 +58,58 @@ header nav a:hover {
   color: #fff;
 }
 
-/* ===== Updated Main Carousel ===== */
-.main-carousel {
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #e6f0fa 80%, #f8f8f8 100%);
+  border-radius: 18px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
-  position: relative;
 }
 
-.carousel-container {
+.carousel-track {
   display: flex;
-  gap: 15px;
-  padding: 0 30px;
-  overflow: hidden;
-  width: calc(100% - 60px);
+  transition: transform 0.6s ease-in-out;
+  width: 100%;
 }
 
-.carousel-slide {
-  flex: 0 0 23%; /* Show 4 items with gap */
-  background: white;
-  border-radius: 12px;
-  padding: 15px;
-  position: relative;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+.carousel-item {
+  flex: 0 0 80%;
+  margin: 0 10px;
+  background: #fff;
+  border: 2px solid #c0c0c0;
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(30,144,255,0.08);
+  transition: transform 0.4s ease;
+  opacity: 0.9;
 }
 
-.carousel-slide:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  background: #f0f8ff;
 }
 
-.discount-badge {
-  position: absolute;
-  top: -10px;
-  right: 10px;
-  background: linear-gradient(90deg, #ff4500, #ff8c00);
-  color: white;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  z-index: 2;
-}
-
-.carousel-content h3 {
-  font-size: 1rem;
-  margin: 15px 0 8px 0;
+.carousel-item h3 {
+  margin: 12px 0 6px 0;
   color: #1e90ff;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-.carousel-content p {
-  font-size: 0.8rem;
-  color: #666;
-  margin-bottom: 10px;
-  min-height: 40px;
+.carousel-item p {
+  color: #555;
+  margin: 4px 0;
 }
 
-.carousel-price {
-  font-weight: bold;
-  color: #333;
-  font-size: 1rem;
-}
-
-/* ===== Original Item Styles (unchanged) ===== */
 .item-container {
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +180,6 @@ header nav a:hover {
   transform: scale(1.03);
 }
 
-/* ===== Rest of original styles remain unchanged ===== */
 .auth-form {
   background: #fff;
   border: 2px solid #c0c0c0;
@@ -209,34 +193,244 @@ header nav a:hover {
   gap: 16px;
 }
 
-/* ... (all other existing styles remain exactly the same) ... */
+.auth-form input {
+  border: 1.5px solid #c0c0c0;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background: #f8f8f8;
+  transition: border 0.2s;
+}
 
-/* ===== Responsive Adjustments ===== */
-@media (max-width: 1024px) {
-  .carousel-slide {
-    flex: 0 0 31%; /* Show 3 items */
+.auth-form input:focus {
+  border: 1.5px solid #1e90ff;
+  outline: none;
+}
+
+.auth-form button {
+  background: linear-gradient(90deg, #1e90ff 80%, #c0c0c0 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.auth-form button:hover {
+  background: #4682b4;
+}
+
+.floating-text-button {
+  position: fixed;
+  right: 18px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 999;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.floating-text-button:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
+}
+
+.floating-text-button.whatsapp {
+  bottom: 90px;
+  background-color: #25D366; /* WhatsApp green */
+}
+
+.floating-text-button.instagram {
+  bottom: 30px;
+  background: #E1306C; /* Instagram red/pink */
+}
+
+.footer {
+  padding: 2rem 1rem;
+  background: linear-gradient(90deg, #f8f8f8 60%, #e6f0fa 100%);
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.shop-button {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #9b14e3, #d4145a);
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.shop-button:hover {
+  background: linear-gradient(90deg, #d4145a, #9b14e3);
+}
+
+.footer-features {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-feature {
+  max-width: 280px;
+  flex: 1 1 260px;
+  text-align: center;
+}
+
+.footer-feature img {
+  width: 48px;
+  margin-bottom: 8px;
+}
+
+.footer-feature h4 {
+  color: #1e90ff;
+  margin-bottom: 6px;
+}
+
+.footer-feature p {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* ✅ MOBILE FIX */
+@media (max-width: 768px) {
+  .footer-features {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-feature {
+    margin-bottom: 1.5rem;
   }
 }
+
 
 @media (max-width: 768px) {
-  .carousel-container {
-    width: calc(100% - 20px);
-    padding: 0 10px;
+  .item-card {
+    width: 90%;
   }
-  
-  .carousel-slide {
-    flex: 0 0 48%; /* Show 2 items */
-    min-width: 0;
+
+  .item-container {
+    gap: 16px;
+    padding: 16px 0;
   }
-  
-  .discount-badge {
-    font-size: 0.7rem;
-    padding: 3px 8px;
+
+  .carousel-item {
+    flex: 0 0 90%;
+  }
+
+  header nav a {
+    font-size: 1rem;
+    padding: 6px 12px;
   }
 }
 
-@media (max-width: 480px) {
-  .carousel-slide {
-    flex: 0 0 100%; /* Show 1 item */
+/* Existing styles remain unchanged until we add our new styles at the end */
+
+/* ===== New Carousel Styles ===== */
+/* These additions won't affect existing styles */
+
+/* Special Offers Carousel Container */
+.items-wrapper .carousel {
+  width: 100%;
+  overflow: hidden;
+  margin: 1rem 0;
+  position: relative;
+}
+
+/* Carousel Track (item container) */
+.items-wrapper .item-container {
+  padding: 0;
+  gap: 0;
+  transition: transform 0.6s ease;
+  will-change: transform;
+}
+
+/* Individual Offer Cards */
+.items-wrapper .item-card {
+  position: relative;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  min-width: calc(25% - 1rem);
+  transition: all 0.3s ease;
+  background: linear-gradient(145deg, #f8fbff, #e6eef8);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(30, 144, 255, 0.12);
+}
+
+/* Special Offer Badge */
+.special-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(90deg, #ff4500, #ff8c00);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Product Details in Carousel */
+.items-wrapper .product-title {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #1e90ff;
+}
+
+.items-wrapper .product-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.3rem 0;
+  min-height: 40px;
+}
+
+.items-wrapper .product-price {
+  font-weight: bold;
+  color: #333;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .items-wrapper .item-card {
+    min-width: calc(50% - 1rem);
   }
+  
+  .special-badge {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+}
+
+/* Ensure these styles only apply to carousel items */
+.items-wrapper .carousel .item-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  background: #f0f8ff;
 }
