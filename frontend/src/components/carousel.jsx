@@ -5,10 +5,8 @@ const OfferItems = [
   { id: 1, name: "Smart Watch", description: "30% off!", price: 299, image: "/promo1.jpg" },
   { id: 2, name: "Wireless Earbuds", description: "Limited stock", price: 199, image: "/promo2.jpg" },
   { id: 3, name: "4K TV", description: "Special deal", price: 899, image: "/promo3.jpg" },
-  { id: 3, name: "4K TV", description: "Special deal", price: 899, image: "/promo4.jpg" },
-  { id: 3, name: "4K TV", description: "Special deal", price: 899, image: "/promo5.jpg" },
-
-
+  { id: 4, name: "Gaming Console", description: "Hot item!", price: 499, image: "/promo4.jpg" },
+  { id: 5, name: "Bluetooth Speaker", description: "Deal ends soon", price: 129, image: "/promo5.jpg" },
 ];
 
 const Carousel = () => {
