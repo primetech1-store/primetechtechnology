@@ -1,39 +1,10 @@
 import { useEffect, useState, useRef } from "react";
 import "./../App.css";
 
-const specialOffers = [
-  { 
-    id: 1, 
-    title: "Premium Headphones", 
-    description: "Noise-cancelling with premium sound", 
-    price: 599, 
-    image: "/iphone16.jpg",
-    discount: "30% OFF" 
-  },
-  { 
-    id: 2, 
-    title: "Smart Watch Pro", 
-    description: "Health tracking & waterproof", 
-    price: 899, 
-    image: "/iphone16.jpg",
-    discount: "Limited Time Offer" 
-  },
-  { 
-    id: 3, 
-    title: "4K Ultra HD TV", 
-    description: "65-inch with HDR", 
-    price: 12999, 
-    image: "/iphone16.jpg",
-    discount: "Free Installation" 
-  },
-  { 
-    id: 4, 
-    title: "Wireless Earbuds", 
-    description: "24hr battery life", 
-    price: 299, 
-    image: "/iphone16.jpg",
-    discount: "Buy 1 Get 1 Free" 
-  },
+const OfferItems = [
+  { id: 4, name: "Smart Watch", description: "30% off!", price: 299, image: "/iphone16.jpg" },
+  { id: 5, name: "Wireless Earbuds", description: "Limited stock", price: 199, image: "/iphone16.jpg" },
+  { id: 6, name: "4K TV", description: "Special deal", price: 899, image: "/iphone16.jpg" },
 ];
 
 const Carousel = () => {
@@ -49,46 +20,52 @@ const Carousel = () => {
   useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(() => {
-      setCurrent((prev) => (prev + 1) % specialOffers.length);
-    }, 3000);
+      setCurrent((prev) => (prev + 1) % OfferItems.length);
+    }, 2000);
 
     return () => {
       resetTimeout();
     };
   }, [current]);
 
-  const goToPrev = () => {
-    setCurrent((prev) => (prev - 1 + specialOffers.length) % specialOffers.length);
-  };
-
-  const goToNext = () => {
-    setCurrent((prev) => (prev + 1) % specialOffers.length);
+  const handleClick = (e) => {
+    const width = e.currentTarget.offsetWidth;
+    const x = e.nativeEvent.offsetX;
+    if (x < width / 2) {
+      setCurrent((prev) => (prev - 1 + OfferItems.length) % OfferItems.length);
+    } else {
+      setCurrent((prev) => (prev + 1) % OfferItems.length);
+    }
   };
 
   return (
-    <div className="bottom-carousel-container">
-      <div className="special-offers-title">SPECIAL OFFERS</div>
-      <div className="bottom-carousel">
-        {specialOffers.map((item, index) => (
+    <div className="carousel" onClick={handleClick}>
+      <div 
+        className="carousel-track" 
+        style={{ 
+          display: 'flex', 
+          transition: 'transform 0.6s ease', 
+          transform: `translateX(-${current * 100}%)` 
+        }}
+      >
+        {bottomOfferItems.map((item, index) => (
           <div
             key={item.id}
-            className={`bottom-carousel-item ${
-              index === current ? "active" : ""
-            }`}
+            className="carousel-item"
             style={{
-              transform: `translateX(-${current * 100}%)`
+              flex: '0 0 100%',
+              opacity: index === current ? 1 : 0.4,
+              transform: index === current ? 'scale(1)' : 'scale(0.9)',
+              transition: 'opacity 0.5s, transform 0.5s',
             }}
           >
-            <div className="offer-badge">{item.discount}</div>
             <img src={item.image} alt={item.name} />
-            <h3>{item.title}</h3>
+            <h3>{item.name}</h3>
             <p>{item.description}</p>
             <p>ZAR {item.price}</p>
           </div>
         ))}
       </div>
-      <button className="carousel-arrow left" onClick={goToPrev}>&lt;</button>
-      <button className="carousel-arrow right" onClick={goToNext}>&gt;</button>
     </div>
   );
 };
