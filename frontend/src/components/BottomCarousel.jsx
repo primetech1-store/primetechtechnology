@@ -4,37 +4,37 @@ import "./../App.css";
 const happyClients = [
   { 
     id: 1, 
-    clientName: "Sarah M.", 
-    purchase: "Smart Watch", 
-    testimonial: "Absolutely love my new watch! The health tracking features are amazing.", 
+    clientName: "Sarah Mpho.", 
+    purchase: "Iphone 13 Pro Max", 
+    testimonial: "I just got my phone am so happy and thanks for ukuthembeka kwakho.", 
     image: "/happyclient1.jpg" 
   },
   { 
     id: 2, 
-    clientName: "James T.", 
-    purchase: "Wireless Earbuds", 
-    testimonial: "Best earbuds I've ever owned. The battery life is incredible!", 
+    clientName: "Miss Thando", 
+    purchase: "Iphone 15 Pro Max", 
+    testimonial: "Thank you so much 🙏, this made my day! Thanks for the wonderful service 💯 and communication. Will come back soon.", 
     image: "/happyclient2.jpg" 
   },
   { 
     id: 3, 
-    clientName: "The Johnson Family", 
-    purchase: "4K Ultra HD TV", 
-    testimonial: "Movie nights will never be the same. The picture quality is stunning!", 
+    clientName: "Nkozi__", 
+    purchase: "Iphone 15 Pro Max", 
+    testimonial: "My phone is here. I am so happyyy 😄thank you so very much 🙏. Please you overly delivered!! I love it😍.", 
     image: "/happyclient3.jpg" 
   },
   { 
     id: 4, 
-    clientName: "Lisa K.", 
-    purchase: "Premium Headphones", 
-    testimonial: "Worth every penny! The noise cancellation is perfect for my commute.", 
+    clientName: "Tebogo_M", 
+    purchase: "Iphone 13 Pro Max", 
+    testimonial: "Thanks Chief😄. Ngizophinde ngi-ode kini bafo ngodadewethu for a discount😄", 
     image: "/happyclient4.jpg" 
   },
   { 
     id: 5, 
-    clientName: "David & Emma", 
-    purchase: "Smart Home Bundle", 
-    testimonial: "Transformed our home. The installation team was fantastic!", 
+    clientName: "Emma", 
+    purchase: "Iphone 12", 
+    testimonial: "Love the camera📸 and fast delivery😄. Thankk youuuuuu🙌", 
     image: "/happyclient5.jpg" 
   },
 ];
