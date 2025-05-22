@@ -37,72 +37,50 @@ const specialOffers = [
 ];
 
 const Carousel = () => {
-  const [current, setCurrent] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const timeoutRef = useRef(null);
+  const itemsPerPage = 4; // Show 4 offers at once
 
-  const resetTimeout = () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      (prevIndex + itemsPerPage) % specialOffers.length
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      (prevIndex - itemsPerPage + specialOffers.length) % specialOffers.length
+    );
   };
 
   useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(() => {
-      setCurrent((prev) => (prev + 1) % specialOffers.length);
-    }, 3000);
+    timeoutRef.current = setTimeout(nextSlide, 3000);
+    return () => clearTimeout(timeoutRef.current);
+  }, [currentIndex]);
 
-    return () => {
-      resetTimeout();
-    };
-  }, [current]);
-
-  const handleClick = (e) => {
-    const width = e.currentTarget.offsetWidth;
-    const x = e.nativeEvent.offsetX;
-    if (x < width / 2) {
-      setCurrent((prev) => (prev - 1 + specialOffers.length) % specialOffers.length);
-    } else {
-      setCurrent((prev) => (prev + 1) % specialOffers.length);
-    }
-  };
+  const visibleOffers = specialOffers.slice(
+    currentIndex, 
+    currentIndex + itemsPerPage
+  );
 
   return (
-    <div className="items-wrapper">
-      <div className="carousel" onClick={handleClick}>
-        <div 
-          className="item-container" 
-          style={{ 
-            display: 'flex',
-            transition: 'transform 0.6s ease',
-            transform: `translateX(-${current * 100}%)`,
-            width: `${specialOffers.length * 100}%`
-          }}
-        >
-          {specialOffers.map((item, index) => (
-            <div
-              key={item.id}
-              className="item-card"
-              style={{
-                flex: '0 0 25%', // Show 4 items at a time (25% width each)
-                opacity: index === current ? 1 : 0.8,
-                transform: index === current ? 'scale(1.02)' : 'scale(0.98)',
-                transition: 'all 0.3s ease',
-                boxShadow: index === current ? '0 8px 24px rgba(30, 144, 255, 0.2)' : '0 4px 12px rgba(30, 144, 255, 0.1)',
-                border: index === current ? '2px solid #1e90ff' : '1px solid #d0d7e0'
-              }}
-            >
-              <div className="special-badge">{item.discount}</div>
-              <img src={item.image} className="product-image" alt={item.title} />
-              <div className="product-details">
-                <h3 className="product-title">{item.title}</h3>
-                <p className="product-description">{item.description}</p>
-                <p className="product-price">ZAR {item.price}</p>
-              </div>
+    <div className="offers-carousel">
+      <button className="carousel-arrow left" onClick={prevSlide}>&lt;</button>
+      
+      <div className="offers-container">
+        {visibleOffers.map((offer) => (
+          <div key={offer.id} className="offer-tile">
+            <div className="offer-badge">{offer.discount}</div>
+            <div className="offer-content">
+              <h3>{offer.title}</h3>
+              <p className="offer-description">{offer.description}</p>
+              <p className="offer-price">ZAR {offer.price}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
+      
+      <button className="carousel-arrow right" onClick={nextSlide}>&gt;</button>
     </div>
   );
 };
