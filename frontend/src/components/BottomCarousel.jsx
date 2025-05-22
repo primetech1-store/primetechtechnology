@@ -21,39 +21,43 @@ const BottomCarousel = () => {
     resetTimeout();
     timeoutRef.current = setTimeout(() => {
       setCurrent((prev) => (prev + 1) % bottomOfferItems.length);
-    }, 3000);
+    }, 2000);
 
     return () => {
       resetTimeout();
     };
   }, [current]);
 
-  const goToPrev = () => {
-    setCurrent((prev) => (prev - 1 + bottomOfferItems.length) % bottomOfferItems.length);
-  };
-
-  const goToNext = () => {
-    setCurrent((prev) => (prev + 1) % bottomOfferItems.length);
+  const handleClick = (e) => {
+    const width = e.currentTarget.offsetWidth;
+    const x = e.nativeEvent.offsetX;
+    if (x < width / 2) {
+      setCurrent((prev) => (prev - 1 + bottomOfferItems.length) % bottomOfferItems.length);
+    } else {
+      setCurrent((prev) => (prev + 1) % bottomOfferItems.length);
+    }
   };
 
   return (
-    <div className="bottom-carousel-container">
+    <div className="carousel" onClick={handleClick}>
       <div 
-        className="bottom-carousel"
-        style={{
-          transform: `translateX(-${current * 100}%)`,
+        className="carousel-track" 
+        style={{ 
+          display: 'flex', 
+          transition: 'transform 0.6s ease', 
+          transform: `translateX(-${current * 100}%)` 
         }}
       >
         {bottomOfferItems.map((item, index) => (
           <div
             key={item.id}
-            className={`bottom-carousel-item ${
-              index === current ? "active" : ""
-            } ${
-              index === (current - 1 + bottomOfferItems.length) % bottomOfferItems.length ? "prev" : ""
-            } ${
-              index === (current + 1) % bottomOfferItems.length ? "next" : ""
-            }`}
+            className="carousel-item"
+            style={{
+              flex: '0 0 100%',
+              opacity: index === current ? 1 : 0.4,
+              transform: index === current ? 'scale(1)' : 'scale(0.9)',
+              transition: 'opacity 0.5s, transform 0.5s',
+            }}
           >
             <img src={item.image} alt={item.name} />
             <h3>{item.name}</h3>
@@ -62,8 +66,6 @@ const BottomCarousel = () => {
           </div>
         ))}
       </div>
-      <button className="carousel-arrow left" onClick={goToPrev}>&lt;</button>
-      <button className="carousel-arrow right" onClick={goToNext}>&gt;</button>
     </div>
   );
 };
