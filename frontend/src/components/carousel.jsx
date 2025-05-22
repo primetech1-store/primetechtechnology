@@ -2,9 +2,13 @@ import { useEffect, useState, useRef } from "react";
 import "./../App.css";
 
 const OfferItems = [
-  { id: 4, name: "Smart Watch", description: "30% off!", price: 299, image: "/iphone16.jpg" },
-  { id: 5, name: "Wireless Earbuds", description: "Limited stock", price: 199, image: "/iphone16.jpg" },
-  { id: 6, name: "4K TV", description: "Special deal", price: 899, image: "/iphone16.jpg" },
+  { id: 1, name: "Smart Watch", description: "30% off!", price: 299, image: "/promo1.jpg" },
+  { id: 2, name: "Wireless Earbuds", description: "Limited stock", price: 199, image: "/promo2.jpg" },
+  { id: 3, name: "4K TV", description: "Special deal", price: 899, image: "/promo3.jpg" },
+  { id: 3, name: "4K TV", description: "Special deal", price: 899, image: "/promo4.jpg" },
+  { id: 3, name: "4K TV", description: "Special deal", price: 899, image: "/promo5.jpg" },
+
+
 ];
 
 const Carousel = () => {
@@ -60,9 +64,6 @@ const Carousel = () => {
             }}
           >
             <img src={item.image} alt={item.name} />
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-            <p>ZAR {item.price}</p>
           </div>
         ))}
       </div>
