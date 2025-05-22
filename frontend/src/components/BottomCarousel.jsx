@@ -2,9 +2,9 @@ import { useEffect, useState, useRef } from "react";
 import "./../App.css";
 
 const bottomOfferItems = [
-  { id: 4, name: "Smart Watch", description: "30% off!", price: 299, image: "smartwatch.jpg" },
-  { id: 5, name: "Wireless Earbuds", description: "Limited stock", price: 199, image: "earbuds.jpg" },
-  { id: 6, name: "4K TV", description: "Special deal", price: 899, image: "4ktv.jpg" },
+  { id: 4, name: "Smart Watch", description: "30% off!", price: 299, image: "/iphone16.jpg" },
+  { id: 5, name: "Wireless Earbuds", description: "Limited stock", price: 199, image: "/iphone16.jpg" },
+  { id: 6, name: "4K TV", description: "Special deal", price: 899, image: "/iphone16.jpg" },
 ];
 
 const BottomCarousel = () => {
