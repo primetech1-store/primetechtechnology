@@ -344,12 +344,7 @@ header nav a:hover {
   }
 }
 
-//* Existing styles remain unchanged until we add our new styles at the end */
 
-/* ===== New Carousel Styles ===== */
-/* These additions won't affect existing styles */
-
-/* Special Offers Carousel Container */
 .items-wrapper .carousel {
   width: 100%;
   overflow: hidden;
