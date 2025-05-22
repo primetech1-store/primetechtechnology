@@ -48,7 +48,7 @@ const Carousel = () => {
           transform: `translateX(-${current * 100}%)` 
         }}
       >
-        {bottomOfferItems.map((item, index) => (
+        {OfferItems.map((item, index) => (
           <div
             key={item.id}
             className="carousel-item"
