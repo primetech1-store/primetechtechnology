@@ -7,6 +7,7 @@ import Topbar from "./components/Topbar";
 import Login from "./Login";
 import Signup from "./Signup";
 import Carousel from "./components/carousel";
+import BottomCarousel from "./components/BottomCarousel";
 
 const Footer = () => (
   <footer className="footer">
