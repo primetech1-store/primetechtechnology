@@ -1,12 +1,42 @@
 import { useEffect, useState, useRef } from "react";
 import "./../App.css";
 
-const bottomOfferItems = [
-  { id: 4, name: "Smart Watch", description: "30% off!", price: 299, image: "/happyclient1.jpg" },
-  { id: 5, name: "Wireless Earbuds", description: "Limited stock", price: 199, image: "/happyclient2.jpg" },
-  { id: 6, name: "4K TV", description: "Special deal", price: 899, image: "/happyclient3.jpg" },
-  { id: 6, name: "4K TV", description: "Special deal", price: 899, image: "/happyclient4.jpg" },
-  { id: 6, name: "4K TV", description: "Special deal", price: 899, image: "/happyclient5.jpg" },
+const happyClients = [
+  { 
+    id: 1, 
+    clientName: "Sarah M.", 
+    purchase: "Smart Watch", 
+    testimonial: "Absolutely love my new watch! The health tracking features are amazing.", 
+    image: "/happyclient1.jpg" 
+  },
+  { 
+    id: 2, 
+    clientName: "James T.", 
+    purchase: "Wireless Earbuds", 
+    testimonial: "Best earbuds I've ever owned. The battery life is incredible!", 
+    image: "/happyclient2.jpg" 
+  },
+  { 
+    id: 3, 
+    clientName: "The Johnson Family", 
+    purchase: "4K Ultra HD TV", 
+    testimonial: "Movie nights will never be the same. The picture quality is stunning!", 
+    image: "/happyclient3.jpg" 
+  },
+  { 
+    id: 4, 
+    clientName: "Lisa K.", 
+    purchase: "Premium Headphones", 
+    testimonial: "Worth every penny! The noise cancellation is perfect for my commute.", 
+    image: "/happyclient4.jpg" 
+  },
+  { 
+    id: 5, 
+    clientName: "David & Emma", 
+    purchase: "Smart Home Bundle", 
+    testimonial: "Transformed our home. The installation team was fantastic!", 
+    image: "/happyclient5.jpg" 
+  },
 ];
 
 const BottomCarousel = () => {
@@ -22,51 +52,51 @@ const BottomCarousel = () => {
   useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(() => {
-      setCurrent((prev) => (prev + 1) % bottomOfferItems.length);
-    }, 2000);
+      setCurrent((prev) => (prev + 1) % happyClients.length);
+    }, 3000);
 
     return () => {
       resetTimeout();
     };
   }, [current]);
 
-  const handleClick = (e) => {
-    const width = e.currentTarget.offsetWidth;
-    const x = e.nativeEvent.offsetX;
-    if (x < width / 2) {
-      setCurrent((prev) => (prev - 1 + bottomOfferItems.length) % bottomOfferItems.length);
-    } else {
-      setCurrent((prev) => (prev + 1) % bottomOfferItems.length);
-    }
+  const nextClient = () => {
+    setCurrent((prev) => (prev + 1) % happyClients.length);
+  };
+
+  const prevClient = () => {
+    setCurrent((prev) => (prev - 1 + happyClients.length) % happyClients.length);
   };
 
   return (
-    <div className="carousel" onClick={handleClick}>
-      <div 
-        className="carousel-track" 
-        style={{ 
-          display: 'flex', 
-          transition: 'transform 0.6s ease', 
-          transform: `translateX(-${current * 100}%)` 
-        }}
-      >
-        {bottomOfferItems.map((item, index) => (
-          <div
-            key={item.id}
-            className="carousel-item"
-            style={{
-              flex: '0 0 100%',
-              opacity: index === current ? 1 : 0.4,
-              transform: index === current ? 'scale(1)' : 'scale(0.9)',
-              transition: 'opacity 0.5s, transform 0.5s',
-            }}
-          >
-            <img src={item.image} alt={item.name} />
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-            <p>ZAR {item.price}</p>
-          </div>
-        ))}
+    <div className="testimonial-carousel">
+      <h2 className="testimonial-title">Our Happy Clients</h2>
+      <div className="testimonial-container">
+        <button className="testimonial-arrow left" onClick={prevClient}>&lt;</button>
+        
+        <div className="testimonial-track">
+          {happyClients.map((client, index) => (
+            <div
+              key={client.id}
+              className={`testimonial-slide ${
+                index === current ? 'active' : 
+                index === (current - 1 + happyClients.length) % happyClients.length ? 'prev' :
+                index === (current + 1) % happyClients.length ? 'next' : ''
+              }`}
+            >
+              <div className="client-content">
+                <img src={client.image} alt={client.clientName} className="client-image" />
+                <div className="client-details">
+                  <h3>{client.clientName}</h3>
+                  <p className="client-purchase">Purchased: {client.purchase}</p>
+                  <p className="client-testimonial">"{client.testimonial}"</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <button className="testimonial-arrow right" onClick={nextClient}>&gt;</button>
       </div>
     </div>
   );

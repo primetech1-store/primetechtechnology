@@ -142,6 +142,7 @@ header nav a:hover {
     margin: 0 -10%;
   }
 }
+
 .item-container {
   display: flex;
   flex-wrap: wrap;
@@ -490,5 +491,144 @@ header nav a:hover {
   .offer-badge {
     font-size: 0.7rem;
     padding: 3px 8px;
+  }
+}
+
+/* Happy Clients Carousel */
+.testimonial-carousel {
+  width: 90%;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 1rem 0;
+}
+
+.testimonial-title {
+  text-align: center;
+  color: #1e90ff;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.testimonial-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-track {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+}
+
+.testimonial-slide {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  transition: all 0.5s ease;
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.testimonial-slide.active {
+  z-index: 3;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.testimonial-slide.prev {
+  z-index: 2;
+  transform: translateX(-60%) scale(0.8);
+  opacity: 0.7;
+}
+
+.testimonial-slide.next {
+  z-index: 2;
+  transform: translateX(60%) scale(0.8);
+  opacity: 0.7;
+}
+
+.client-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.client-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1e90ff;
+  margin-bottom: 1rem;
+}
+
+.client-details {
+  text-align: center;
+}
+
+.client-details h3 {
+  color: #1e90ff;
+  margin-bottom: 0.5rem;
+}
+
+.client-purchase {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.client-testimonial {
+  font-style: italic;
+  color: #555;
+  line-height: 1.5;
+}
+
+.testimonial-arrow {
+  position: absolute;
+  background: rgba(30, 144, 255, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-arrow.left {
+  left: 0;
+}
+
+.testimonial-arrow.right {
+  right: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-slide {
+    width: 80%;
+    left: 10%;
+  }
+  
+  .testimonial-slide.prev {
+    transform: translateX(-70%) scale(0.8);
+  }
+  
+  .testimonial-slide.next {
+    transform: translateX(70%) scale(0.8);
+  }
+  
+  .client-content {
+    flex-direction: column;
   }
 }
