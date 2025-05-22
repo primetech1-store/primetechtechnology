@@ -344,106 +344,58 @@ header nav a:hover {
   }
 }
 
-/* Bottom Carousel Styles */
-.bottom-carousel-container {
-  position: relative;
+/* Special Offers Carousel Styles */
+.items-wrapper .carousel {
   width: 100%;
-  max-width: 260px;
-  margin: 2rem auto;
   overflow: hidden;
+  margin: 1rem 0;
 }
 
-.bottom-carousel {
-  display: flex;
-  transition: transform 0.5s ease;
-  width: 100%;
+.items-wrapper .item-container {
+  padding: 0;
+  gap: 0;
 }
 
-.bottom-carousel-item {
-  flex: 0 0 100%;
-  padding: 15px;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(30,144,255,0.08);
-  text-align: center;
-  transition: all 0.3s ease;
+.items-wrapper .item-card {
+  position: relative;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  min-width: calc(25% - 1rem);
 }
 
-.bottom-carousel-item img {
-  width: 100%;
-  height: auto;
-  max-height: 150px;
-  object-fit: contain;
-  border-radius: 14px;
-  margin-bottom: 10px;
-}
-
-.bottom-carousel-item h3 {
-  margin: 10px 0 5px 0;
-  color: #1e90ff;
-  font-size: 1.1rem;
-}
-
-.bottom-carousel-item p {
-  margin: 5px 0;
-  color: #555;
-  font-size: 0.9rem;
-}
-
-.bottom-carousel-item.prev {
+.special-badge {
   position: absolute;
-  left: -90%;
-  opacity: 0.5;
-  transform: scale(0.8);
-}
-
-.bottom-carousel-item.next {
-  position: absolute;
-  right: -90%;
-  opacity: 0.5;
-  transform: scale(0.8);
-}
-
-.carousel-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(30, 144, 255, 0.7);
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(90deg, #ff4500, #ff8c00);
   color: white;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  font-size: 1rem;
-  cursor: pointer;
-  z-index: 10;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 2;
 }
 
-.carousel-arrow.left {
-  left: 5px;
+.product-title {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #1e90ff;
 }
 
-.carousel-arrow.right {
-  right: 5px;
+.product-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.3rem 0;
 }
 
-/* Mobile optimization */
+.product-price {
+  font-weight: bold;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
 @media (max-width: 768px) {
-  .bottom-carousel-container {
-    max-width: 90%;
-  }
-  
-  .bottom-carousel-item {
-    padding: 10px;
-  }
-  
-  .bottom-carousel-item img {
-    max-height: 120px;
-  }
-  
-  .carousel-arrow {
-    width: 25px;
-    height: 25px;
-    font-size: 0.8rem;
+  .items-wrapper .item-card {
+    min-width: calc(50% - 1rem);
   }
 }
