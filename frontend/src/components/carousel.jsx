@@ -64,6 +64,7 @@ const Carousel = () => {
             }}
           >
             <img src={item.image} alt={item.name} />
+            <h3>{item.name}</h3>
             <p>{item.description}</p>
             <p><strong>Price:</strong> ${item.price}</p>
           </div>
