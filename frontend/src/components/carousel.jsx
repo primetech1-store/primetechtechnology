@@ -37,50 +37,58 @@ const specialOffers = [
 ];
 
 const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [current, setCurrent] = useState(0);
   const timeoutRef = useRef(null);
-  const itemsPerPage = 4; // Show 4 offers at once
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      (prevIndex + itemsPerPage) % specialOffers.length
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      (prevIndex - itemsPerPage + specialOffers.length) % specialOffers.length
-    );
+  const resetTimeout = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
   };
 
   useEffect(() => {
-    timeoutRef.current = setTimeout(nextSlide, 3000);
-    return () => clearTimeout(timeoutRef.current);
-  }, [currentIndex]);
+    resetTimeout();
+    timeoutRef.current = setTimeout(() => {
+      setCurrent((prev) => (prev + 1) % specialOffers.length);
+    }, 3000);
 
-  const visibleOffers = specialOffers.slice(
-    currentIndex, 
-    currentIndex + itemsPerPage
-  );
+    return () => {
+      resetTimeout();
+    };
+  }, [current]);
+
+  const goToPrev = () => {
+    setCurrent((prev) => (prev - 1 + specialOffers.length) % specialOffers.length);
+  };
+
+  const goToNext = () => {
+    setCurrent((prev) => (prev + 1) % specialOffers.length);
+  };
 
   return (
-    <div className="offers-carousel">
-      <button className="carousel-arrow left" onClick={prevSlide}>&lt;</button>
-      
-      <div className="offers-container">
-        {visibleOffers.map((offer) => (
-          <div key={offer.id} className="offer-tile">
-            <div className="offer-badge">{offer.discount}</div>
-            <div className="offer-content">
-              <h3>{offer.title}</h3>
-              <p className="offer-description">{offer.description}</p>
-              <p className="offer-price">ZAR {offer.price}</p>
-            </div>
+    <div className="bottom-carousel-container">
+      <div className="special-offers-title">SPECIAL OFFERS</div>
+      <div className="bottom-carousel">
+        {specialOffers.map((item, index) => (
+          <div
+            key={item.id}
+            className={`bottom-carousel-item ${
+              index === current ? "active" : ""
+            }`}
+            style={{
+              transform: `translateX(-${current * 100}%)`
+            }}
+          >
+            <div className="offer-badge">{item.discount}</div>
+            <img src={item.image} alt={item.name} />
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+            <p>ZAR {item.price}</p>
           </div>
         ))}
       </div>
-      
-      <button className="carousel-arrow right" onClick={nextSlide}>&gt;</button>
+      <button className="carousel-arrow left" onClick={goToPrev}>&lt;</button>
+      <button className="carousel-arrow right" onClick={goToNext}>&gt;</button>
     </div>
   );
 };
