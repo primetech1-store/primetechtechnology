@@ -344,88 +344,106 @@ header nav a:hover {
   }
 }
 
-
-.items-wrapper .carousel {
+/* Bottom Carousel Styles */
+.bottom-carousel-container {
+  position: relative;
   width: 100%;
+  max-width: 260px;
+  margin: 2rem auto;
   overflow: hidden;
-  margin: 1rem 0;
-  position: relative;
 }
 
-/* Carousel Track (item container) */
-.items-wrapper .item-container {
-  padding: 0;
-  gap: 0;
-  transition: transform 0.6s ease;
-  will-change: transform;
-}
-
-/* Individual Offer Cards */
-.items-wrapper .item-card {
-  position: relative;
-  padding: 1rem;
-  margin: 0 0.5rem;
-  min-width: calc(25% - 1rem);
-  transition: all 0.3s ease;
-  background: linear-gradient(145deg, #f8fbff, #e6eef8);
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(30, 144, 255, 0.12);
-}
-
-/* Special Offer Badge */
-.special-badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: linear-gradient(90deg, #ff4500, #ff8c00);
-  color: white;
-  padding: 4px 8px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  z-index: 2;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Product Details in Carousel */
-.items-wrapper .product-title {
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
-  color: #1e90ff;
-}
-
-.items-wrapper .product-description {
-  font-size: 0.9rem;
-  color: #555;
-  margin: 0.3rem 0;
-  min-height: 40px;
-}
-
-.items-wrapper .product-price {
-  font-weight: bold;
-  color: #333;
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .items-wrapper .item-card {
-    min-width: calc(50% - 1rem);
-  }
-  
-  .special-badge {
-    font-size: 0.7rem;
-    padding: 3px 6px;
-  }
-}
-
-/* Ensure these styles only apply to carousel items */
-.items-wrapper .carousel .item-card img {
+.bottom-carousel {
+  display: flex;
+  transition: transform 0.5s ease;
   width: 100%;
-  height: 180px;
+}
+
+.bottom-carousel-item {
+  flex: 0 0 100%;
+  padding: 15px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(30,144,255,0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.bottom-carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
   object-fit: contain;
   border-radius: 14px;
   margin-bottom: 10px;
-  background: #f0f8ff;
+}
+
+.bottom-carousel-item h3 {
+  margin: 10px 0 5px 0;
+  color: #1e90ff;
+  font-size: 1.1rem;
+}
+
+.bottom-carousel-item p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.bottom-carousel-item.prev {
+  position: absolute;
+  left: -90%;
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+
+.bottom-carousel-item.next {
+  position: absolute;
+  right: -90%;
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(30, 144, 255, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-arrow.left {
+  left: 5px;
+}
+
+.carousel-arrow.right {
+  right: 5px;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .bottom-carousel-container {
+    max-width: 90%;
+  }
+  
+  .bottom-carousel-item {
+    padding: 10px;
+  }
+  
+  .bottom-carousel-item img {
+    max-height: 120px;
+  }
+  
+  .carousel-arrow {
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+  }
 }
