@@ -337,11 +337,11 @@ header nav a:hover {
   }
 
   .carousel {
-    width: 95%; 
+    width: 100%; 
   }
 
   .carousel-item {
-    flex: 0 0 90%; 
+    flex: 0 0 80%; 
   }
 
   .bottom-carousel-container {
