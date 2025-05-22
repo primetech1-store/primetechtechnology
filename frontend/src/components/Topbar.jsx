@@ -30,11 +30,8 @@ const Topbar = () => {
           <Link to="/" onClick={toggleMenu}>
             Products
           </Link>
-          <Link to="/" onClick={toggleMenu}>
+          <Link to="/footer" onClick={toggleMenu}>
             About
-          </Link>
-          <Link to="/" onClick={toggleMenu}>
-            Contact
           </Link>
         </nav>
       </div>

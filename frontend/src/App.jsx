@@ -43,7 +43,7 @@ function App() {
       <main>
         <Topbar />
         <Routes>
-          <Route path="/" element={<><Carousel /><Items /></>} />
+          <Route path="/" element={<><Carousel /><Items /><BottomCarousel /></>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/payment" element={<Payment />} />
