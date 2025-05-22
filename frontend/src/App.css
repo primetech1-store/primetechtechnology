@@ -61,7 +61,9 @@ header nav a:hover {
 .carousel {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 90%; /* Changed from 100% to 90% */
+  max-width: 800px; /* Added max-width constraint */
+  margin: 2rem auto; /* Centered the carousel */
   height: 100%;
   background: linear-gradient(90deg, #e6f0fa 80%, #f8f8f8 100%);
   border-radius: 18px;
@@ -76,8 +78,8 @@ header nav a:hover {
 }
 
 .carousel-item {
-  flex: 0 0 80%;
-  margin: 0 10px;
+  flex: 0 0 85%; /* Increased from 80% to take more space */
+  margin: 0 auto; /* Centered the items */
   background: #fff;
   border: 2px solid #c0c0c0;
   border-radius: 18px;
@@ -334,8 +336,17 @@ header nav a:hover {
     padding: 16px 0;
   }
 
+  .carousel {
+    width: 95%; 
+  }
+
   .carousel-item {
-    flex: 0 0 90%;
+    flex: 0 0 90%; 
+  }
+
+  .bottom-carousel-container {
+    width: 95%;
+    max-width: 100%;
   }
 
   header nav a {
