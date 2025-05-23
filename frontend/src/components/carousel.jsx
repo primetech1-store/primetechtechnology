@@ -94,17 +94,18 @@ const Carousel = () => {
               key={item.id}
               className={`carousel-slide ${index === current ? 'active' : ''}`}
             >
-              <div className="slide-content">
+              <div className="image-wrapper">
                 <img 
                   src={item.image} 
                   alt={item.name} 
+                  className="carousel-image"
                   loading="lazy"
                 />
-                <div className="slide-info">
-                  <h3>{item.name}</h3>
-                  <p className="description">{item.description}</p>
-                  <p className="price">ZAR {item.price.toLocaleString()}</p>
-                </div>
+              </div>
+              <div className="slide-info">
+                <h3>{item.name}</h3>
+                <p className="description">{item.description}</p>
+                <p className="price">ZAR {item.price.toLocaleString()}</p>
               </div>
             </div>
           ))}

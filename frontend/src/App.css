@@ -79,7 +79,8 @@ header nav a:hover {
   align-items: center;
   justify-content: center;
   background: #f8f8f8;
-  overflow: visible; /* Allows full image to show */
+  overflow: visible; 
+  margin-bottom: 15px;
 }
 
 .unscaled-image {
@@ -101,12 +102,13 @@ header nav a:hover {
 .carousel-track {
   display: flex;
   transition: transform 0.6s ease;
-  height: 400px; /* Fixed height for consistency */
 }
 
 /* Carousel Slide */
 .carousel-slide {
   min-width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -124,7 +126,8 @@ header nav a:hover {
 
 .carousel-image {
   width: auto;
-  height: 100%;
+  height: auto;
+  max-height: 100%;
   max-width: 100%;
   object-fit: contain; /* Ensures full image is visible */
 }
