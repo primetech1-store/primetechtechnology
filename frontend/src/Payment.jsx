@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "./CheckoutForm";
 import { loadStripe } from "@stripe/stripe-js";
+import { useNavigate } from "react-router-dom";
 
 function Payment() {
   const [stripePromise, setStripePromise] = useState(null);
@@ -37,7 +38,7 @@ function Payment() {
     const updatedItems = items.filter((i) => i.id !== item.id);
     localStorage.setItem("cart", JSON.stringify(updatedItems));
     alert(`${item.name} removed from cart`);
-    window.location.reload(); // Refresh the page to reflect changes
+    navigate("/");
   };
   return (
     <>
