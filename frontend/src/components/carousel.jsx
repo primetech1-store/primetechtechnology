@@ -2,11 +2,11 @@ import { useEffect, useState, useRef } from "react";
 import "./../App.css";
 
 const OfferItems = [
-  { id: 1, name: "Iphone 13", description: "Iphone 13 + Airpods pro3 + Analog watch!", price: 299, image: "/promo1.jpg" },
-  { id: 2, name: "Iphone 15", description: "Iphone 15 + Airpods pro3 + Analog watch", price: 199, image: "/promo2.jpg" },
-  { id: 3, name: "Iphone 15 Pro", description: "Iphone 15 Pro + Airpods pro3 + Analog watch", price: 899, image: "/promo3.jpg" },
-  { id: 4, name: "Iphone 14", description: "Iphone 14 + Airpods pro3 + Analog watch", price: 899, image: "/promo4.jpg" },
-  { id: 5, name: "Iphone 15 Pro Max", description: "Iphone 15 Pro Max + Airpods pro3 + Analog watch", price: 899, image: "/promo5.jpg" },
+  { id: 1, name: "Iphone 13", description: "Iphone 13 + Airpods pro3 + Analog watch!", price: 299, image: "/promo1.jpeg" },
+  { id: 2, name: "Iphone 15", description: "Iphone 15 + Airpods pro3 + Analog watch", price: 199, image: "/promo2.jpeg" },
+  { id: 3, name: "Iphone 15 Pro", description: "Iphone 15 Pro + Airpods pro3 + Analog watch", price: 899, image: "/promo3.jpeg" },
+  { id: 4, name: "Iphone 14", description: "Iphone 14 + Airpods pro3 + Analog watch", price: 899, image: "/promo4.jpeg" },
+  { id: 5, name: "Iphone 15 Pro Max", description: "Iphone 15 Pro Max + Airpods pro3 + Analog watch", price: 899, image: "/promo5.jpeg" },
 
 ];
 
