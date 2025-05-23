@@ -2,17 +2,47 @@ import { useEffect, useState, useRef } from "react";
 import "./../App.css";
 
 const OfferItems = [
-  { id: 1, name: "Iphone 13", description: "Iphone 13 + Airpods pro3 + Analog watch!", price: 299, image: "/iphone13.jpg" },
-  { id: 2, name: "Iphone 15", description: "Iphone 15 + Airpods pro3 + Analog watch", price: 199, image: "/iphone15pro.jpg" },
-  { id: 3, name: "Iphone 15 Pro", description: "Iphone 15 Pro + Airpods pro3 + Analog watch", price: 899, image: "/iphone15pro.jpg" },
-  { id: 4, name: "Iphone 14", description: "Iphone 14 + Airpods pro3 + Analog watch", price: 899, image: "/iphone14.jpg" },
-  { id: 5, name: "Iphone 15 Pro Max", description: "Iphone 15 Pro Max + Airpods pro3 + Analog watch", price: 899, image: "/iphone15promax.jpg" },
-
+  { 
+    id: 1, 
+    name: "iPhone 13 Bundle", 
+    description: "iPhone 13 + AirPods Pro 3 + Analog Watch", 
+    price: 299, 
+    image: "/iphone13.jpg" 
+  },
+  { 
+    id: 2, 
+    name: "iPhone 15 Bundle", 
+    description: "iPhone 15 + AirPods Pro 3 + Analog Watch", 
+    price: 199, 
+    image: "/iphone15pro.jpg" 
+  },
+  { 
+    id: 3, 
+    name: "iPhone 15 Pro Bundle", 
+    description: "iPhone 15 Pro + AirPods Pro 3 + Analog Watch", 
+    price: 899, 
+    image: "/iphone15pro.jpg" 
+  },
+  { 
+    id: 4, 
+    name: "iPhone 14 Bundle", 
+    description: "iPhone 14 + AirPods Pro 3 + Analog Watch", 
+    price: 899, 
+    image: "/iphone14.jpg" 
+  },
+  { 
+    id: 5, 
+    name: "iPhone 15 Pro Max Bundle", 
+    description: "iPhone 15 Pro Max + AirPods Pro 3 + Analog Watch", 
+    price: 899, 
+    image: "/iphone15promax.jpg" 
+  },
 ];
 
 const Carousel = () => {
   const [current, setCurrent] = useState(0);
   const timeoutRef = useRef(null);
+  const carouselRef = useRef(null);
 
   const resetTimeout = () => {
     if (timeoutRef.current) {
@@ -24,7 +54,7 @@ const Carousel = () => {
     resetTimeout();
     timeoutRef.current = setTimeout(() => {
       setCurrent((prev) => (prev + 1) % OfferItems.length);
-    }, 2000);
+    }, 3000);
 
     return () => {
       resetTimeout();
@@ -32,41 +62,63 @@ const Carousel = () => {
   }, [current]);
 
   const handleClick = (e) => {
-    const width = e.currentTarget.offsetWidth;
-    const x = e.nativeEvent.offsetX;
-    if (x < width / 2) {
+    const { left, width } = carouselRef.current.getBoundingClientRect();
+    const clickPosition = e.clientX - left;
+    
+    if (clickPosition < width / 2) {
       setCurrent((prev) => (prev - 1 + OfferItems.length) % OfferItems.length);
     } else {
       setCurrent((prev) => (prev + 1) % OfferItems.length);
     }
   };
 
+  const goToSlide = (index) => {
+    setCurrent(index);
+  };
+
   return (
-    <div className="carousel" onClick={handleClick}>
+    <div className="carousel-container">
       <div 
-        className="carousel-track" 
-        style={{ 
-          display: 'flex', 
-          transition: 'transform 0.6s ease', 
-          transform: `translateX(-${current * 100}%)` 
-        }}
+        className="carousel" 
+        onClick={handleClick}
+        ref={carouselRef}
       >
-        {OfferItems.map((item, index) => (
-          <div
-            key={item.id}
-            className="carousel-item"
-            style={{
-              flex: '0 0 100%',
-              opacity: index === current ? 1 : 0.4,
-              transform: index === current ? 'scale(1)' : 'scale(0.9)',
-              transition: 'opacity 0.5s, transform 0.5s',
-            }}
-          >
-            <img src={item.image} alt={item.name} />
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-            <p>ZAR {item.price}</p>
-          </div>
+        <div 
+          className="carousel-track" 
+          style={{ 
+            transform: `translateX(-${current * 100}%)` 
+          }}
+        >
+          {OfferItems.map((item, index) => (
+            <div
+              key={item.id}
+              className={`carousel-slide ${index === current ? 'active' : ''}`}
+            >
+              <div className="slide-content">
+                <img 
+                  src={item.image} 
+                  alt={item.name} 
+                  loading="lazy"
+                />
+                <div className="slide-info">
+                  <h3>{item.name}</h3>
+                  <p className="description">{item.description}</p>
+                  <p className="price">ZAR {item.price.toLocaleString()}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="carousel-dots">
+        {OfferItems.map((_, index) => (
+          <button
+            key={index}
+            className={`dot ${index === current ? 'active' : ''}`}
+            onClick={() => goToSlide(index)}
+            aria-label={`Go to slide ${index + 1}`}
+          />
         ))}
       </div>
     </div>
