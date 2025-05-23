@@ -20,9 +20,7 @@ const Topbar = () => {
         </Link>
       </div>
       <div className="topbar-right">
-        <button className="hamburger" onClick={toggleMenu}>
-          ☰
-        </button>
+        
         <nav className={`menu ${isMenuOpen ? "open" : ""}`}>
           <Link to="/" onClick={toggleMenu}>
             Home
