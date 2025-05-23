@@ -14,28 +14,28 @@ const OfferItems = [
     name: "iPhone 15 Bundle", 
     description: "iPhone 15 + AirPods Pro 3 + Analog Watch", 
     price: 199, 
-    image: "/iphone15pro.jpg" 
+    image: "/promo2.jpg" 
   },
   { 
     id: 3, 
     name: "iPhone 15 Pro Bundle", 
     description: "iPhone 15 Pro + AirPods Pro 3 + Analog Watch", 
     price: 899, 
-    image: "/iphone15pro.jpg" 
+    image: "/promo3.jpg" 
   },
   { 
     id: 4, 
     name: "iPhone 14 Bundle", 
     description: "iPhone 14 + AirPods Pro 3 + Analog Watch", 
     price: 899, 
-    image: "/iphone14.jpg" 
+    image: "/promo4.jpg" 
   },
   { 
     id: 5, 
     name: "iPhone 15 Pro Max Bundle", 
     description: "iPhone 15 Pro Max + AirPods Pro 3 + Analog Watch", 
     price: 899, 
-    image: "/iphone15promax.jpg" 
+    image: "/promo5.jpg" 
   },
 ];
 
