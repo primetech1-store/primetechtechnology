@@ -7,7 +7,7 @@ const OfferItems = [
     name: "iPhone 13 Bundle", 
     description: "iPhone 13 + AirPods Pro 3 + Analog Watch", 
     price: 299, 
-    image: "/iphone13.jpg" 
+    image: "/promo1.jpg" 
   },
   { 
     id: 2, 
