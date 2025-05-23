@@ -2,9 +2,12 @@ import { useEffect, useState, useRef } from "react";
 import "./../App.css";
 
 const OfferItems = [
-  { id: 1, name: "Smart Watch", description: "30% off!", price: 299, image: "/promo1.jpg" },
-  { id: 2, name: "Wireless Earbuds", description: "Limited stock", price: 199, image: "/promo2.jpg" },
-  { id: 3, name: "4K TV", description: "Special deal", price: 899, image: "/promo3.jpg" },
+  { id: 1, name: "Iphone 13", description: "Iphone 13 + Airpods pro3 + Analog watch!", image: "/promo1.jpg" },
+  { id: 2, name: "Iphone 15", description: "Iphone 15 + Airpods pro3 + Analog watch", image: "/promo2.jpg" },
+  { id: 3, name: "Iphone 15 Pro", description: "Iphone 15 Pro + Airpods pro3 + Analog watch", image: "/promo3.jpg" },
+  { id: 4, name: "Iphone 14", description: "Iphone 14 + Airpods pro3 + Analog watch", image: "/promo4.jpg" },
+  { id: 5, name: "Iphone 15 Pro Max", description: "Iphone 15 Pro Max + Airpods pro3 + Analog watch", image: "/promo5.jpg" },
+
 ];
 
 const Carousel = () => {
@@ -57,22 +60,11 @@ const Carousel = () => {
               opacity: index === current ? 1 : 0.4,
               transform: index === current ? 'scale(1)' : 'scale(0.9)',
               transition: 'opacity 0.5s, transform 0.5s',
-              position: 'relative'
             }}
           >
-            <img src={item.image} alt={item.name} style={{ width: '100%', height: 'auto' }} />
-            <div style={{
-              position: 'absolute',
-              bottom: '20px',
-              left: 0,
-              right: 0,
-              textAlign: 'center',
-              backgroundColor: 'rgba(30, 144, 255, 0.8)',
-              color: 'white',
-              padding: '10px'
-            }}>
-              <h3 style={{ margin: 0 }}>{item.name}</h3>
-            </div>
+            <img src={item.image} alt={item.name} />
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
           </div>
         ))}
       </div>
