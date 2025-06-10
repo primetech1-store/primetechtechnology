@@ -1,10 +1,10 @@
 [
-  {
+    {
     "id": 1,
-    "title": "iPhone 15 Pro Max 128GB, 256GB - Brand New",
-    "price": 23700,
-    "image": "/iphone15promax.jpg",
-    "description": "iPhone 15 Pro Max available in 128GB and 256GB storage. Brand new, sealed pack."
+    "title": "PlayStation 4 Pro 1TB - Pre-Owned",
+    "price": 8900,
+    "image": "/playstation 4 pro.jpg",
+    "description": "Used PlayStation 4 Pro with 1TB storage. Enhanced graphics and performance."
   },
   {
     "id": 2,
@@ -188,11 +188,18 @@
     "image": "/playstation 4 slim.jpg",
     "description": "Pre-owned PS4 Slim with 1TB storage. Compact and efficient for all games."
   },
-  {
+ {
     "id": 28,
-    "title": "PlayStation 4 Pro 1TB - Pre-Owned",
-    "price": 8900,
-    "image": "/playstation 4 pro.jpg",
-    "description": "Used PlayStation 4 Pro with 1TB storage. Enhanced graphics and performance."
+    "title": "iPhone 15 Pro Max 128GB, 256GB - Brand New",
+    "price": 23700,
+    "image": "/iphone15promax.jpg",
+    "description": "iPhone 15 Pro Max available in 128GB and 256GB storage. Brand new, sealed pack."
+  },
+  {
+    "id": 29,
+    "title": "Applewatch ultra 2",
+    "price": 5600,
+    "image": "",
+    "description": ""
   }
 ]
