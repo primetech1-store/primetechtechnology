@@ -164,35 +164,35 @@
     "id": 24,
     "title": "PlayStation 5 Pro - Brand New",
     "price": 23000,
-    "image": "/ps5pro.jpg",
+    "image": "/playstation 5 pro.jpg",
     "description": "Brand new PlayStation 5 Pro. Ultimate performance for next-gen gaming."
   },
   {
     "id": 25,
     "title": "PlayStation 5 Digital Edition - Brand New",
     "price": 18500,
-    "image": "/ps5digital.jpg",
+    "image": "/playstation 5 digital edition.jpg",
     "description": "Brand new PS5 Digital Edition. All-digital console for disc-free gaming."
   },
   {
     "id": 26,
     "title": "PlayStation 5 Standard Edition - Brand New",
     "price": 20000,
-    "image": "/ps5standard.jpg",
+    "image": "/playstation 5 standard edition.jpg",
     "description": "PlayStation 5 Standard Edition. Immersive gameplay with disc support."
   },
   {
     "id": 27,
     "title": "PlayStation 4 Slim 1TB - Pre-Owned",
     "price": 7500,
-    "image": "/ps4slim.jpg",
+    "image": "/playstation 4 slim.jpg",
     "description": "Pre-owned PS4 Slim with 1TB storage. Compact and efficient for all games."
   },
   {
     "id": 28,
     "title": "PlayStation 4 Pro 1TB - Pre-Owned",
     "price": 8900,
-    "image": "/ps4pro.jpg",
+    "image": "/playstation 4 pro.jpg",
     "description": "Used PlayStation 4 Pro with 1TB storage. Enhanced graphics and performance."
   }
 ]
