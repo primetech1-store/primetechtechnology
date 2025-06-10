@@ -1,10 +1,10 @@
 [
-    {
+  {
     "id": 1,
     "title": "PlayStation 4 Pro 1TB - Pre-Owned",
-    "price": 8900,
+    "price": 6000,
     "image": "/playstation 4 pro 1 TB.jpg",
-    "description": "Used PlayStation 4 Pro with 1TB storage. Enhanced graphics and performance."
+    "description": "Used PlayStation 4 Pro with 1TB storage. Enhanced graphics and performance. Includes FIFA 24, 2 extra optional games, 2 DualSense controllers, HDMI cable, Media Remote, and Charger."
   },
   {
     "id": 2,
@@ -163,37 +163,51 @@
   {
     "id": 24,
     "title": "PlayStation 5 Pro - Brand New",
-    "price": 23000,
+    "price": 12000,
     "image": "/playstation 5 pro.jpg",
-    "description": "Brand new PlayStation 5 Pro. Ultimate performance for next-gen gaming."
+    "description": "Brand new PlayStation 5 Pro. Ultimate performance for next-gen gaming. Includes FIFA 24, 2 extra optional games, 2 DualSense controllers, HDMI cable, Media Remote, and Charger."
   },
   {
     "id": 25,
     "title": "PlayStation 5 Digital Edition - Brand New",
-    "price": 18500,
+    "price": 8600,
     "image": "/playstation 5 digital edition.jpg",
-    "description": "Brand new PS5 Digital Edition. All-digital console for disc-free gaming."
+    "description": "Brand new PS5 Digital Edition. All-digital console for disc-free gaming. Includes FIFA 24, 2 extra optional games, 2 DualSense controllers, HDMI cable, Media Remote, and Charger."
   },
   {
     "id": 26,
     "title": "PlayStation 5 Standard Edition - Brand New",
-    "price": 20000,
+    "price": 10200,
     "image": "/playstation 5 standard edition.jpg",
-    "description": "PlayStation 5 Standard Edition. Immersive gameplay with disc support."
+    "description": "PlayStation 5 Standard Edition. Immersive gameplay with disc support. Includes FIFA 24, 2 extra optional games, 2 DualSense controllers, HDMI cable, Media Remote, and Charger."
   },
   {
     "id": 27,
     "title": "PlayStation 4 Slim 1TB - Pre-Owned",
-    "price": 7500,
+    "price": 4900,
     "image": "/playstation 4 slim 500 gb.jpg",
-    "description": "Pre-owned PS4 Slim with 1TB storage. Compact and efficient for all games."
+    "description": "Pre-owned PS4 Slim with 1TB storage. Compact and efficient for all games. Includes FIFA 24, 2 extra optional games, 2 DualSense controllers, HDMI cable, Media Remote, and Charger."
   },
- {
+  {
     "id": 28,
     "title": "iPhone 15 Pro Max 128GB, 256GB - Brand New",
     "price": 23700,
     "image": "/iphone15promax.jpg",
     "description": "iPhone 15 Pro Max available in 128GB and 256GB storage. Brand new, sealed pack."
+  },
+  {
+    "id": 29,
+    "title": "PlayStation 4 Slim 500GB - Pre-Owned",
+    "price": 3500,
+    "image": "/playstation 4 slim 500 gb.jpg",
+    "description": "Pre-owned PS4 Slim with 500GB storage. Compact and efficient for all games. Includes FIFA 24, 2 extra optional games, 2 DualSense controllers, HDMI cable, Media Remote, and Charger."
+  },
+  {
+    "id": 30,
+    "title": "PlayStation 4 Limited Edition ",
+    "price": 4200,
+    "image": "/playstation 4 slim 500 gb.jpg",
+    "description": "Pre-owned PS4 limited edition with great storage. Compact and efficient for all games. Includes FIFA 24, 2 extra optional games, 2 DualSense controllers, HDMI cable, Media Remote, and Charger."
   },
   {
     "id": 29,
