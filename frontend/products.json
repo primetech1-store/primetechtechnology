@@ -4,160 +4,195 @@
     "title": "iPhone 15 Pro Max 128GB, 256GB - Brand New",
     "price": 23700,
     "image": "/iphone15promax.jpg",
-    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 15 Pro Max available in 128GB and 256GB storage. Brand new, sealed pack."
   },
   {
     "id": 2,
     "title": "iPhone 15 Pro 128GB, 256GB - Brand New",
     "price": 19700,
     "image": "/iphone15pro.jpg",
-    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 15 Pro with advanced features and stunning design. Brand new units."
   },
   {
     "id": 3,
     "title": "iPhone 15 Plus 256GB - Brand New",
     "price": 17400,
     "image": "/iphone15plus.jpg",
-    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 15 Plus with 256GB storage. Large display and improved battery life."
   },
   {
     "id": 4,
     "title": "iPhone 15 256GB - Brand New",
     "price": 16500,
     "image": "/iphone15.jpg",
-    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 15 with 256GB capacity. Latest model in pristine condition."
   },
   {
     "id": 5,
     "title": "iPhone 14 Pro Max 128GB, 256GB - Brand New",
     "price": 15500,
     "image": "/iphone14promax.jpg",
-    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 14 Pro Max, high-end performance and design. Brand new condition."
   },
   {
     "id": 6,
     "title": "iPhone 14 Pro 128GB, 256GB - Brand New",
     "price": 14200,
     "image": "/iphone14pro.jpg",
-    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 14 Pro available in multiple storage options. Factory-sealed device."
   },
   {
     "id": 7,
     "title": "iPhone 14 Plus 128GB, 256GB - Brand New",
     "price": 13100,
     "image": "/iphone14plus.jpg",
-    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 14 Plus featuring extended battery and large display. Brand new."
   },
   {
     "id": 8,
     "title": "iPhone 14 128GB, 256GB - Brand New",
     "price": 12900,
     "image": "/iphone14.jpg",
-    "description": "Brand New. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 14 in 128GB and 256GB variants. Sleek, powerful and new."
   },
   {
     "id": 9,
     "title": "iPhone 13 Pro Max 128GB, 256GB - Pre-Owned",
     "price": 11800,
     "image": "/iphone13promax.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "Pre-owned iPhone 13 Pro Max in excellent condition. Multiple storage options."
   },
   {
     "id": 10,
     "title": "iPhone 13 Pro 256GB - Pre-Owned",
     "price": 10000,
     "image": "/iphone13pro.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "Used iPhone 13 Pro 256GB. Grade A condition and fully functional."
   },
   {
     "id": 11,
     "title": "iPhone 12 Pro Max 128GB, 256GB - Pre-Owned",
     "price": 9100,
     "image": "/iphone12promax.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 12 Pro Max pre-owned models. High-end camera and display."
   },
   {
     "id": 12,
     "title": "iPhone 12 Pro 256GB - Pre-Owned",
     "price": 7700,
     "image": "/iphone12pro.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 12 Pro 256GB in top pre-owned condition. Great value."
   },
   {
     "id": 13,
     "title": "iPhone 12 64GB, 128GB - Pre-Owned",
     "price": 6900,
     "image": "/iphone12.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 12 in good condition. Available in 64GB and 128GB."
   },
   {
     "id": 14,
     "title": "iPhone 11 Pro Max 64GB, 256GB - Pre-Owned",
     "price": 6500,
     "image": "/iphone11promax.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "Used iPhone 11 Pro Max with stunning OLED display. Multiple capacities."
   },
   {
     "id": 15,
     "title": "iPhone 11 Pro 64GB, 128GB - Pre-Owned",
     "price": 5500,
     "image": "/iphone11pro.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "Pre-owned iPhone 11 Pro, compact and high-performance. Various sizes."
   },
   {
     "id": 16,
     "title": "iPhone 11 64GB, 128GB, 256GB - Pre-Owned [Limited Stock]",
     "price": 4000,
     "image": "/iphone11.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 11 in multiple storage options. Limited units available."
   },
   {
     "id": 17,
     "title": "iPhone XS Max 64GB, 256GB - Pre-Owned",
     "price": 4000,
     "image": "/iphonexs.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "Used iPhone XS Max with large screen and excellent battery life."
   },
   {
     "id": 18,
     "title": "iPhone XS 64GB, 256GB - Pre-Owned",
     "price": 3900,
     "image": "/iphonexs.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone XS available used in 64GB and 256GB. Premium design."
   },
   {
     "id": 19,
     "title": "iPhone XR 64GB, 128GB - Pre-Owned",
     "price": 3950,
     "image": "/iphonexr.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "Pre-owned iPhone XR in vibrant colors. Affordable and reliable."
   },
   {
     "id": 20,
     "title": "iPhone X 128GB, 256GB - Pre-Owned",
     "price": 3700,
     "image": "/iphonex.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "Used iPhone X with Face ID. Solid performance and condition."
   },
   {
     "id": 21,
     "title": "iPhone 8 Plus 64GB, 256GB - Pre-Owned [Limited Stock]",
     "price": 3500,
     "image": "/iphone8plus.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "iPhone 8 Plus in great condition. Limited stock available."
   },
   {
     "id": 22,
     "title": "iPhone 8 64GB, 256GB - Pre-Owned",
     "price": 2800,
     "image": "/iphone8.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "Pre-owned iPhone 8, compact and reliable. Great everyday phone."
   },
   {
     "id": 23,
     "title": "iPhone 7 Plus 32GB, 128GB - Pre-Owned",
     "price": 2900,
     "image": "/iphone7.jpg",
-    "description": "Pre-owned Grade A. Includes AirPods, Warranty, Free Cover & Glass Protector."
+    "description": "Used iPhone 7 Plus available in 32GB and 128GB. Good performance."
+  },
+  {
+    "id": 24,
+    "title": "PlayStation 5 Pro - Brand New",
+    "price": 23000,
+    "image": "/ps5pro.jpg",
+    "description": "Brand new PlayStation 5 Pro. Ultimate performance for next-gen gaming."
+  },
+  {
+    "id": 25,
+    "title": "PlayStation 5 Digital Edition - Brand New",
+    "price": 18500,
+    "image": "/ps5digital.jpg",
+    "description": "Brand new PS5 Digital Edition. All-digital console for disc-free gaming."
+  },
+  {
+    "id": 26,
+    "title": "PlayStation 5 Standard Edition - Brand New",
+    "price": 20000,
+    "image": "/ps5standard.jpg",
+    "description": "PlayStation 5 Standard Edition. Immersive gameplay with disc support."
+  },
+  {
+    "id": 27,
+    "title": "PlayStation 4 Slim 1TB - Pre-Owned",
+    "price": 7500,
+    "image": "/ps4slim.jpg",
+    "description": "Pre-owned PS4 Slim with 1TB storage. Compact and efficient for all games."
+  },
+  {
+    "id": 28,
+    "title": "PlayStation 4 Pro 1TB - Pre-Owned",
+    "price": 8900,
+    "image": "/ps4pro.jpg",
+    "description": "Used PlayStation 4 Pro with 1TB storage. Enhanced graphics and performance."
   }
 ]
